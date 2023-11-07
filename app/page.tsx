@@ -1,9 +1,11 @@
+import Hero from '@/components/ui/Hero/Hero'
 import Image from 'next/image'
 
 export default function Home() {
     return (
         <main>
-            <h1>Hello</h1>
+            <nav>Navigator</nav>
+            <Hero />
         </main>
     )
 }
