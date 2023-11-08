@@ -15,7 +15,7 @@ export default function Hero() {
                             duration: 1.5,
                         },
                     }}
-                    className='text-4xl font-semibold text-cerulean-500'
+                    className='text-4xl font-semibold text-cerulean-500 dark:text-cerulean-400'
                 >
                     Elevate Healthcare Standards with Our Premium Equipment
                 </motion.h1>
@@ -52,7 +52,7 @@ export default function Hero() {
                         },
                     }}
                     whileHover={{ scale: 1.05 }}
-                    className='p-2 bg-cyan-600 rounded font-semibold text-white w-1/2 mx-auto'
+                    className='p-2 bg-cerulean-400 rounded font-semibold text-white w-1/2 mx-auto'
                 >
                     Explore Our Products
                 </motion.button>
