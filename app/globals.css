@@ -4,8 +4,8 @@
 
 :root {
     --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
+    --background-start-rgb: 215, 217, 206;
+    --background-end-rgb: 246, 246, 243;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,3 +26,5 @@ body {
         )
         rgb(var(--background-start-rgb));
 }
+
+/* 215, 217, 206 */

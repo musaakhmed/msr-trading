@@ -8,6 +8,11 @@ const config: Config = {
     ],
     theme: {
         extend: {
+            colors: {
+                cerulean: {
+                    500: '#0C7489',
+                },
+            },
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
                 'gradient-conic':

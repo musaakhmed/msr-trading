@@ -52,7 +52,7 @@ export default function Hero() {
                         },
                     }}
                     whileHover={{ scale: 1.05 }}
-                    className='p-2 dark:bg-blue-900 bg-blue-600 rounded font-semibold text-white w-1/2 mx-auto'
+                    className='p-2 bg-cerulean-500 rounded font-semibold text-white w-1/2 mx-auto'
                 >
                     Explore Our Products
                 </motion.button>
