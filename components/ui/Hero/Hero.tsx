@@ -15,7 +15,7 @@ export default function Hero() {
                             duration: 1.5,
                         },
                     }}
-                    className='text-4xl font-semibold'
+                    className='text-4xl font-semibold text-cerulean-500'
                 >
                     Elevate Healthcare Standards with Our Premium Equipment
                 </motion.h1>
