@@ -6,13 +6,13 @@ export default function Hero() {
         <>
             <section className='p-6 space-y-6 h-screen flex flex-col justify-end pb-12'>
                 <motion.h1
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 50 }}
                     animate={{
                         opacity: 1,
                         y: 0,
                         transition: {
                             ease: [0.1, 0.03, 0.5, 0.9],
-                            duration: 1,
+                            duration: 1.5,
                         },
                     }}
                     className='text-4xl font-semibold'
@@ -21,13 +21,14 @@ export default function Hero() {
                 </motion.h1>
 
                 <motion.p
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 50 }}
                     animate={{
                         opacity: 1,
                         y: 0,
                         transition: {
-                            ease: [0.7, 0.003, 0.9, 0.9],
-                            duration: 2,
+                            ease: [0.1, 0.03, 0.5, 0.9],
+                            duration: 1.5,
+                            delay: 0.6,
                         },
                     }}
                 >
@@ -40,16 +41,18 @@ export default function Hero() {
                 </motion.p>
 
                 <motion.button
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 50 }}
                     animate={{
                         opacity: 1,
                         y: 0,
                         transition: {
-                            ease: [1, 0.03, 0.5, 0.9],
-                            duration: 3,
+                            ease: [0.1, 0.03, 0.5, 0.9],
+                            duration: 1.5,
+                            delay: 1.2,
                         },
                     }}
-                    className='p-2 dark:bg-blue-900 bg-blue-600 rounded font-semibold text-white'
+                    whileHover={{ scale: 1.05 }}
+                    className='p-2 dark:bg-blue-900 bg-blue-600 rounded font-semibold text-white w-1/2 mx-auto'
                 >
                     Explore Our Products
                 </motion.button>
