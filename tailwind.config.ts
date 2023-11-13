@@ -10,6 +10,7 @@ const config: Config = {
         extend: {
             colors: {
                 cerulean: {
+                    50: '# fdfeff',
                     100: '#D9F6FC',
                     200: '#A1E9F7',
                     300: '#1DCAED',
