@@ -37,19 +37,34 @@ export default function NavMenu() {
             <Link href='/' className='font-bold text-lg'>
                 Weld Med
             </Link>
-            <div onClick={menuOpenHandler}>MENU</div>
-            <div className='flex flex-col gap-6 mx-auto hidden'>
-                <nav className='flex flex-col gap-2 text-center '>
-                    {navItems.map((navItem) => (
-                        <Link href={navItem.link} key={navItem.link}>
-                            {navItem.label}
-                        </Link>
-                    ))}
-                </nav>
+            <div className='transition-all duration-200 ease-in'>
+                <div onClick={menuOpenHandler}>X</div>
+                <div
+                    className={
+                        isOpen
+                            ? 'flex flex-col justify-evenly gap-6 mx-auto bg-cerulean-800 h-screen w-full fixed top-16 left-0'
+                            : 'hidden'
+                    }
+                >
+                    <nav className='text-center '>
+                        <ul className=''>
+                            {navItems.map((navItem) => (
+                                <li
+                                    className='flex flex-col justify-evenly'
+                                    key={navItem.link}
+                                >
+                                    <Link href={navItem.link}>
+                                        {navItem.label}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </nav>
 
-                <button className='border border-0.5 border-cerulean-200 bg-cerulean-900 hover:bg-cerulean-700 transition-all duration-150 ease-in-out rounded-md text-cerulean-50 p-2'>
-                    Contact Us
-                </button>
+                    <button className='border border-0.5 w-1/3 mx-auto border-cerulean-200 bg-cerulean-900 hover:bg-cerulean-700 transition-all duration-150 ease-in-out rounded-md text-cerulean-50 p-2'>
+                        Contact Us
+                    </button>
+                </div>
             </div>
         </header>
     )
