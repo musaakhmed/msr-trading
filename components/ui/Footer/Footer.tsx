@@ -3,8 +3,8 @@ import React from 'react'
 const Footer = () => {
     return (
         <>
-            <footer className=' rounded-lg shadow m-4 bg-cerulean-800'>
-                <div className='w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between'>
+            <footer className=' rounded-lg  shadow bg-cerulean-800 mx-4'>
+                <div className='w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between -mt-10'>
                     <span className='text-sm  sm:text-center text-cerulean-100'>
                         © 2023{' '}
                         <a href='/' className='hover:underline'>

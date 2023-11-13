@@ -71,7 +71,7 @@ export default function Hero() {
                     Explore Our Products
                 </motion.button>
             </motion.section>
-            <div className='h-screen'></div>
+            {/* <div className='h-screen'></div> */}
         </>
     )
 }
