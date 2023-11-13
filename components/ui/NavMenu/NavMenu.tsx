@@ -3,7 +3,13 @@
 import { useState } from 'react'
 
 export default function NavMenu() {
-    const [open, isOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
 
-    return <nav className='h-12 z-10 bg-cerulean-100'>NavMenu</nav>
+    return (
+        <header className='z-10 fixed w-full top-0 bg-cerulean-900 flex justify-between items-center px-6 h-16'>
+            <span className='font-bold text-lg'>Weld Med</span>
+
+            <nav>{isOpen ? '-' : 'null'}</nav>
+        </header>
+    )
 }

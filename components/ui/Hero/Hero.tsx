@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 export default function Hero() {
     return (
         <>
-            <motion.section className='p-6 space-y-6 h-[calc(100vh-4rem)] flex flex-col justify-end pb-12'>
+            <motion.section className=' space-y-6 h-[calc(100vh-4rem)] flex flex-col justify-end py-16'>
                 <motion.div
-                    className='bg-hero-pattern bg-cover bg-center h-1/2'
+                    className='bg-hero-pattern bg-cover bg-center h-1/2 bg-blend-overlay bg-cerulean-800'
                     initial={{ opacity: 0 }}
                     animate={{
                         opacity: 1,
@@ -28,12 +28,13 @@ export default function Hero() {
                             duration: 1,
                         },
                     }}
-                    className='text-4xl font-semibold text-cerulean-500 dark:text-cerulean-400'
+                    className='text-4xl px-6 font-semibold text-cerulean-500 dark:text-cerulean-400'
                 >
                     Elevate Healthcare Standards with Our Premium Equipment
                 </motion.h1>
 
                 <motion.p
+                    className='p-6'
                     initial={{ opacity: 0, y: 50 }}
                     animate={{
                         opacity: 1,
