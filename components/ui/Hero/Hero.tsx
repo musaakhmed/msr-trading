@@ -28,13 +28,13 @@ export default function Hero() {
                             duration: 1,
                         },
                     }}
-                    className='text-4xl px-6 font-semibold text-cerulean-400'
+                    className='text-2xl px-6 font-semibold text-cerulean-400'
                 >
                     Elevate Healthcare Standards with Our Premium Equipment
                 </motion.h1>
 
                 <motion.p
-                    className='p-6'
+                    className='p-6 text-sm'
                     initial={{ opacity: 0, y: 50 }}
                     animate={{
                         opacity: 1,
