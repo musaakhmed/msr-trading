@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const company = () => {
-    return <div>company</div>
-}
+	return <div className="h-screen">company</div>;
+};
 
-export default company
+export default company;
