@@ -35,7 +35,7 @@ export default function Hero() {
 				</motion.h1>
 
 				<motion.p
-					className="p-6 text-sm"
+					className="text-md p-6 text-cerulean-100"
 					initial={{ opacity: 0, y: 50 }}
 					animate={{
 						opacity: 1,

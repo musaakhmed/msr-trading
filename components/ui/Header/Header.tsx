@@ -14,7 +14,7 @@ export default function NavMenu() {
 
 	return (
 		<header className="fixed top-0 z-10 flex h-16 w-full items-center justify-between bg-cerulean-800 px-6">
-			<Link href="/" className="text-lg font-bold">
+			<Link href="/" className="text-lg font-semibold text-cerulean-100">
 				Weld Med
 			</Link>
 			<div className="transition-all duration-200 ease-in">
