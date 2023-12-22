@@ -13,8 +13,8 @@ export default function NavMenu() {
 	};
 
 	return (
-		<header className="fixed top-0 z-10 flex h-16 w-full items-center justify-between bg-cerulean-800 px-6">
-			<Link href="/" className="text-lg font-semibold text-cerulean-100">
+		<header className="bg-primary fixed top-0 z-10 flex h-16 w-full items-center justify-between px-6">
+			<Link href="/" className="text-secondary text-lg font-semibold">
 				Weld Med
 			</Link>
 			<div className="transition-all duration-200 ease-in">
@@ -22,7 +22,7 @@ export default function NavMenu() {
 				<motion.div
 					className={
 						isOpen
-							? 'fixed left-0 top-16 mx-auto flex h-screen w-full flex-col justify-center gap-6 bg-cerulean-800'
+							? 'bg-primary fixed left-0 top-16 mx-auto flex h-screen w-full flex-col justify-center gap-6'
 							: 'hidden'
 					}
 				>

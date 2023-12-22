@@ -35,7 +35,7 @@ export default function Hero() {
 				</motion.h1>
 
 				<motion.p
-					className="text-md p-6 text-cerulean-100"
+					className="text-md text-primary p-6"
 					initial={{ opacity: 0, y: 50 }}
 					animate={{
 						opacity: 1,
@@ -67,7 +67,7 @@ export default function Hero() {
 						},
 					}}
 					whileHover={{ scale: 1.02 }}
-					className="mx-auto w-1/2 rounded-lg bg-cerulean-400 p-2 font-semibold text-white hover:rounded"
+					className="bg-primary text-secondary mx-auto w-1/2 rounded-lg p-2 font-semibold hover:rounded"
 				>
 					Explore Our Products
 				</motion.button>

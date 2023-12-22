@@ -21,6 +21,8 @@ const config: Config = {
 					800: '#06404B',
 					900: '#032026',
 				},
+				primary: 'rgb(var(--color-primary) / <alpha-value>)',
+				secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
 			},
 			backgroundImage: {
 				'hero-pattern': "url('/assets/images/hero/dental1.jpg')",
