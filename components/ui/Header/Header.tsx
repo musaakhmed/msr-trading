@@ -13,8 +13,8 @@ export default function NavMenu() {
 	};
 
 	return (
-		<header className="bg-primary fixed top-0 z-10 flex h-16 w-full items-center justify-between px-6">
-			<Link href="/" className="text-secondary text-lg font-semibold">
+		<header className="bg-background fixed top-0 z-10 flex h-16 w-full items-center justify-between px-6 shadow-md ">
+			<Link href="/" className="text-primary text-lg font-semibold">
 				Weld Med
 			</Link>
 			<div className="transition-all duration-200 ease-in">
