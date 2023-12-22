@@ -4,20 +4,7 @@ import { motion } from 'framer-motion';
 export default function Hero() {
 	return (
 		<>
-			<motion.section className="flex h-[calc(100vh-4rem)] flex-col justify-end space-y-6 py-16">
-				<motion.div
-					className="h-1/2 bg-cerulean-800 bg-hero-pattern bg-cover bg-center bg-blend-overlay"
-					initial={{ opacity: 0 }}
-					animate={{
-						opacity: 1,
-						transition: {
-							ease: [0.1, 0.03, 0.5, 0.9],
-							duration: 1.5,
-							delay: 2,
-						},
-					}}
-				/>
-
+			<motion.section className=" flex h-[calc(100vh-4rem)] flex-col justify-end space-y-6 py-16">
 				<motion.h1
 					initial={{ opacity: 0, y: 50 }}
 					animate={{
@@ -28,11 +15,22 @@ export default function Hero() {
 							duration: 1,
 						},
 					}}
-					className="bg-gradient-to-b from-cerulean-600 to-cerulean-300 bg-clip-text px-6
-                    text-2xl font-semibold text-transparent "
+					className="text-primary px-6 text-center text-4xl font-semibold  "
 				>
 					Elevate Healthcare Standards with Our Premium Equipment
 				</motion.h1>
+				<motion.div
+					className="mx-4 h-1/2 rounded-lg bg-cerulean-800 bg-hero-pattern bg-cover bg-center bg-blend-overlay"
+					initial={{ opacity: 0 }}
+					animate={{
+						opacity: 1,
+						transition: {
+							ease: [0.1, 0.03, 0.5, 0.9],
+							duration: 1,
+							delay: 0.5,
+						},
+					}}
+				/>
 
 				<motion.p
 					className="text-md text-primary p-6"
@@ -42,8 +40,8 @@ export default function Hero() {
 						y: 0,
 						transition: {
 							ease: [0.1, 0.03, 0.5, 0.9],
-							duration: 1,
-							delay: 0.6,
+							duration: 0.5,
+							delay: 0.4,
 						},
 					}}
 				>
@@ -62,12 +60,12 @@ export default function Hero() {
 						y: 0,
 						transition: {
 							ease: [0.1, 0.03, 0.5, 0.9],
-							duration: 1,
-							delay: 1.2,
+							duration: 0.5,
+							delay: 1,
 						},
 					}}
-					whileHover={{ scale: 1.02 }}
-					className="bg-primary text-secondary mx-auto w-1/2 rounded-lg p-2 font-semibold hover:rounded"
+					whileHover={{ scale: 1.01 }}
+					className="bg-primary text-secondary mx-auto w-1/2 rounded-lg p-2 "
 				>
 					Explore Our Products
 				</motion.button>
