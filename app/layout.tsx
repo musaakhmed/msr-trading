@@ -1,10 +1,13 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Nunito_Sans } from 'next/font/google';
 import './globals.css';
 import NavMenu from '@/components/ui/Header/Header';
 import Footer from '@/components/ui/Footer/Footer';
 
-const inter = Inter({ subsets: ['latin'] });
+const nunito = Nunito_Sans({
+	subsets: ['latin'],
+	variable: '--font-nunito-sans',
+});
 
 export const metadata: Metadata = {
 	title: 'WeldMed',
@@ -19,7 +22,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<meta name="viewport" content="width=device-width" />
-			<body className={inter.className}>
+			<body className={` bg-background ${nunito.className}`}>
 				<NavMenu />
 				{children}
 				<Footer />

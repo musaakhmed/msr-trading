@@ -8,6 +8,9 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				nunito_sans: 'var(--font-nunito-sans)',
+			},
 			colors: {
 				cerulean: {
 					50: '#fdfeff',
@@ -23,6 +26,7 @@ const config: Config = {
 				},
 				primary: 'rgb(var(--color-primary) / <alpha-value>)',
 				secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
+				background: 'rgb(var(--bg-color) / <alpha-value>)',
 			},
 			backgroundImage: {
 				'hero-pattern': "url('/assets/images/hero/dental1.jpg')",
