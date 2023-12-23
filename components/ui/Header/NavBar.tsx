@@ -44,10 +44,10 @@ const mobileLinkVars = {
 
 const NavBar = () => {
 	return (
-		<div className="flex flex-col items-center justify-between gap-20">
+		<div className=" flex flex-col items-center justify-between gap-20">
 			<AnimatePresence>
 				<motion.nav className="">
-					<ul className="flex w-full flex-col items-center justify-evenly gap-12 overflow-hidden text-4xl">
+					<ul className="-mt-20 flex w-full flex-col items-center justify-evenly gap-12 overflow-hidden text-4xl">
 						{navItems.map((navItem) => (
 							<motion.li
 								variants={mobileLinkVars}
