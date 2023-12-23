@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Link from 'next/link';
 import { useState } from 'react';
 import NavBar from './NavBar';
+import { HamBox } from './HamBox';
 
 const variants = {
 	initial: {
@@ -43,8 +44,7 @@ export default function NavMenu() {
 					onClick={menuOpenHandler}
 					className=" cursor-pointer"
 				>
-					{/* //TODO Create NavBar Hamburger button animation */}
-					{isOpen ? 'X' : '='}
+					<HamBox isOpen={isOpen} />
 				</motion.div>
 				<AnimatePresence>
 					{isOpen && (
