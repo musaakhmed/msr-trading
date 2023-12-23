@@ -42,7 +42,7 @@ const mobileLinkVars = {
 	},
 };
 
-const NavBar = () => {
+const NavBar = ({ isOpen }: { isOpen: boolean }) => {
 	return (
 		<div className=" flex flex-col items-center justify-between gap-16">
 			<AnimatePresence>
@@ -50,6 +50,7 @@ const NavBar = () => {
 					<ul className="-mt-16 flex w-full flex-col items-center justify-evenly gap-10 overflow-hidden text-3xl">
 						{navItems.map((navItem) => (
 							<motion.li
+								onClick={(isOpen) => !isOpen}
 								variants={mobileLinkVars}
 								initial="initial"
 								animate="open"
@@ -64,6 +65,7 @@ const NavBar = () => {
 				</motion.nav>
 
 				<motion.button
+					onClick={(isOpen) => !isOpen}
 					initial={{ opacity: 0, y: 50 }}
 					animate={{
 						opacity: 1,

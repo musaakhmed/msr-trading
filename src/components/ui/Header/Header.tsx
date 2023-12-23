@@ -48,6 +48,7 @@ export default function NavMenu() {
 				<AnimatePresence>
 					{isOpen && (
 						<motion.div
+							onClick={menuOpenHandler}
 							initial="initial"
 							animate="animate"
 							exit="exit"
@@ -58,7 +59,7 @@ export default function NavMenu() {
 									: 'hidden'
 							}
 						>
-							<NavBar />
+							<NavBar isOpen={isOpen} />
 						</motion.div>
 					)}
 				</AnimatePresence>
