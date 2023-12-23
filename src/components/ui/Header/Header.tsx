@@ -31,7 +31,6 @@ export default function NavMenu() {
 
 	const menuOpenHandler = () => {
 		setIsOpen((prev) => !prev);
-		console.log('Open:', isOpen);
 	};
 
 	return (
