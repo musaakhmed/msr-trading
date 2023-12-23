@@ -34,8 +34,8 @@ export default function NavMenu() {
 	};
 
 	return (
-		<header className="bg-background fixed top-0 z-10 flex h-16 w-full items-center justify-between px-6 shadow-md ">
-			<Link href="/" className="text-primary text-xl font-bold">
+		<header className="fixed top-0 z-10 flex h-16 w-full items-center justify-between bg-background px-6 shadow-md ">
+			<Link href="/" className="text-xl font-bold text-primary">
 				Weld Med
 			</Link>
 			<div className="transition-all duration-200 ease-in">
@@ -55,7 +55,7 @@ export default function NavMenu() {
 							variants={variants}
 							className={
 								isOpen
-									? 'bg-primary fixed left-0 top-16 z-20 mx-auto flex h-screen w-full origin-top flex-col justify-center gap-6'
+									? 'fixed left-0 top-16 z-20 mx-auto flex h-2/3 w-full origin-top flex-col justify-center gap-6 bg-background bg-opacity-80 shadow backdrop-blur-md '
 									: 'hidden'
 							}
 						>

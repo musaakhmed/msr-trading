@@ -44,17 +44,17 @@ const mobileLinkVars = {
 
 const NavBar = () => {
 	return (
-		<div className=" flex flex-col items-center justify-between gap-20">
+		<div className=" flex flex-col items-center justify-between gap-16">
 			<AnimatePresence>
 				<motion.nav className="">
-					<ul className="-mt-20 flex w-full flex-col items-center justify-evenly gap-12 overflow-hidden text-4xl">
+					<ul className="-mt-16 flex w-full flex-col items-center justify-evenly gap-10 overflow-hidden text-3xl">
 						{navItems.map((navItem) => (
 							<motion.li
 								variants={mobileLinkVars}
 								initial="initial"
 								animate="open"
 								exit="initial"
-								className="text-secondary"
+								className="text-primary"
 								key={navItem.link}
 							>
 								<Link href={navItem.link}>{navItem.label}</Link>
@@ -76,7 +76,7 @@ const NavBar = () => {
 					}}
 					exit="initial"
 					whileHover={{ scale: 1.05 }}
-					className=" bg-secondary text-primary rounded px-12 py-4 text-3xl font-bold"
+					className=" rounded-lg bg-primary px-8 py-3 text-2xl font-semibold text-secondary"
 				>
 					Request a Quote
 				</motion.button>
