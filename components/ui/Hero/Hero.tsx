@@ -15,11 +15,11 @@ export default function Hero() {
 							duration: 0.5,
 						},
 					}}
-					className="text-primary px-6 text-center text-4xl font-extrabold  "
+					className="px-6 text-center text-4xl font-extrabold text-primary  "
 				>
 					Elevate Healthcare Standards with Our Premium Equipment
 				</motion.h1>
-				{/* <motion.div
+				<motion.div
 					className="mx-4 h-1/3 rounded-lg bg-cerulean-800 bg-hero-pattern bg-cover bg-center bg-blend-overlay"
 					initial={{ opacity: 0 }}
 					animate={{
@@ -30,10 +30,10 @@ export default function Hero() {
 							delay: 0.5,
 						},
 					}}
-				/> */}
+				/>
 
 				<motion.p
-					className="text-primary p-6 text-center text-lg"
+					className="p-6 text-center text-lg text-primary"
 					initial={{ opacity: 0, y: 25 }}
 					animate={{
 						opacity: 1,
@@ -62,7 +62,7 @@ export default function Hero() {
 						},
 					}}
 					whileHover={{ scale: 1.01 }}
-					className="bg-primary text-secondary mx-auto w-1/2 rounded-lg p-2 "
+					className="mx-auto w-1/2 rounded-lg bg-primary p-2 text-secondary "
 				>
 					Explore Our Products
 				</motion.button>
