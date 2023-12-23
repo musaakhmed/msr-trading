@@ -1,5 +1,7 @@
 import React from 'react';
 
-export const partners = () => {
+const partners = () => {
 	return <div>partners</div>;
 };
+
+export default partners;

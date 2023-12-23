@@ -1,5 +1,7 @@
 import React from 'react';
 
-export const industries = () => {
+const industries = () => {
 	return <div>industries</div>;
 };
+
+export default industries;
