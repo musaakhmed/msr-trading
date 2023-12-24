@@ -22,7 +22,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<meta name="viewport" content="width=device-width" />
-			<body className={` bg-background ${nunito.className}`}>
+			<body className={` text-text bg-background ${nunito.className}`}>
 				<NavMenu />
 				{children}
 				<Footer />

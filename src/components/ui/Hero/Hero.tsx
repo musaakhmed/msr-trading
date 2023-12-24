@@ -15,7 +15,7 @@ export default function Hero() {
 							duration: 0.5,
 						},
 					}}
-					className="px-6 text-center text-4xl font-extrabold text-primary  "
+					className="text-text px-6 text-center text-4xl font-extrabold  "
 				>
 					Elevate Healthcare Standards with Our Premium Equipment
 				</motion.h1>
@@ -33,7 +33,7 @@ export default function Hero() {
 				/>
 
 				<motion.p
-					className="p-6 text-center text-lg text-primary"
+					className="p-6 text-center text-lg"
 					initial={{ opacity: 0, y: 25 }}
 					animate={{
 						opacity: 1,
