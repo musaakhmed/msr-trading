@@ -10,6 +10,7 @@ const titleVars = {
 		transition: {
 			ease: [0.1, 0.03, 0.5, 0.9],
 			duration: 0.5,
+			delay: 0.25,
 		},
 	},
 };
@@ -21,7 +22,7 @@ const paragraphVars = {
 		transition: {
 			ease: [0.1, 0.03, 0.5, 0.9],
 			duration: 0.5,
-			delay: 0.25,
+			delay: 0.5,
 		},
 	},
 };
