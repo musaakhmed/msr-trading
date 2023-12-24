@@ -34,8 +34,12 @@ export default function NavMenu() {
 	};
 
 	return (
-		<header className="fixed top-0 z-10 flex h-16 w-full items-center justify-between bg-background px-6 shadow-md ">
-			<Link href="/" className="text-xl font-bold text-primary">
+		<header className=" fixed top-0 z-10 flex h-16 w-full items-center justify-between bg-background px-6 shadow-md ">
+			<Link
+				href="/"
+				className="text-xl font-bold text-primary"
+				onClick={menuOpenHandler}
+			>
 				Weld Med
 			</Link>
 			<div className="transition-all duration-200 ease-in">
