@@ -38,7 +38,7 @@ export default function NavMenu() {
 			<Link
 				href="/"
 				className="text-xl font-bold text-primary"
-				onClick={menuOpenHandler}
+				onClick={() => setIsOpen(false)}
 			>
 				Weld Med
 			</Link>
