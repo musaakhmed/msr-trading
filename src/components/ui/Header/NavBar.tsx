@@ -10,7 +10,7 @@ interface nav_items {
 const navItems: nav_items[] = [
 	{
 		label: 'Company',
-		link: 'about',
+		link: 'company',
 	},
 	{
 		label: 'Industries',
