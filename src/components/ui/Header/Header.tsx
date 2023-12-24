@@ -59,7 +59,7 @@ export default function NavMenu() {
 							variants={variants}
 							className={
 								isOpen
-									? 'fixed left-0 top-16 z-20 mx-auto flex h-2/3 w-full origin-top flex-col justify-center gap-6 bg-background bg-opacity-80 shadow backdrop-blur-md '
+									? 'fixed left-0 top-16 z-20 mx-auto flex h-screen w-full origin-top flex-col justify-center gap-6 bg-background bg-opacity-70 shadow backdrop-blur-md '
 									: 'hidden'
 							}
 						>
