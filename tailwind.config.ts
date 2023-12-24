@@ -25,6 +25,7 @@ const config: Config = {
 					900: '#032026',
 				},
 				primary: 'rgb(var(--color-primary) / <alpha-value>)',
+				text: 'rgb(var(--color-text) / <alpha-value>)',
 				secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
 				background: 'rgb(var(--bg-color) / <alpha-value>)',
 			},
