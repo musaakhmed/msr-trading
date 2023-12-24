@@ -42,7 +42,7 @@ const mobileLinkVars = {
 	},
 };
 
-const NavBar = () => {
+const NavBar = ({ isOpen }: { isOpen: boolean }) => {
 	return (
 		<div className=" flex flex-col items-center justify-between gap-16">
 			<AnimatePresence>

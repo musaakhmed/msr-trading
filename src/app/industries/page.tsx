@@ -2,7 +2,14 @@
 
 import { motion } from 'framer-motion';
 
-const dentalEquipmentIndustries = [
+interface IndustriesData {
+	name: string;
+	description: string;
+}
+
+interface IndustriesDataArray extends Array<IndustriesData> {}
+
+const dentalEquipmentIndustries: IndustriesDataArray = [
 	{
 		name: 'Diagnostic Equipment',
 		description:
