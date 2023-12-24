@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion, stagger } from 'framer-motion';
 import Link from 'next/link';
 import React from 'react';
 
@@ -29,15 +29,31 @@ const mobileLinkVars = {
 	initial: {
 		y: '30vh',
 		transition: {
-			duration: 0.5,
-			ease: [0.22, 1, 0.39, 1],
+			duration: 1,
+			ease: [0.22, 0, 0.39, 0],
 		},
 	},
 	open: {
 		y: 0,
 		transition: {
-			duration: 0.5,
+			duration: 1,
 			ease: [0.22, 1, 0.39, 1],
+		},
+	},
+};
+
+const containerVars = {
+	initial: {
+		transition: {
+			staggerChildren: 0.05,
+			staggerDirection: -1,
+		},
+	},
+	open: {
+		transition: {
+			delayChildren: 0.5,
+			staggerChildren: 0.05,
+			staggerDirection: 1,
 		},
 	},
 };
@@ -45,25 +61,42 @@ const mobileLinkVars = {
 const NavBar = ({ isOpen }: { isOpen: boolean }) => {
 	return (
 		<div className=" flex flex-col items-center justify-between gap-16">
-			<AnimatePresence>
-				<motion.nav className="">
-					<ul className="-mt-16 flex w-full flex-col items-center justify-evenly gap-10 overflow-hidden text-3xl">
+			<motion.nav className="">
+				<AnimatePresence>
+					<ul className="-mt-16 flex w-full flex-col items-center justify-evenly gap-10 text-3xl">
 						{navItems.map((navItem) => (
-							<motion.li
-								key={navItem.link}
-								onClick={(isOpen) => !isOpen}
-								variants={mobileLinkVars}
+							<motion.div
+								variants={containerVars}
 								initial="initial"
 								animate="open"
 								exit="initial"
-								className="text-primary"
+								className="overflow-hidden"
+								key={navItem.link}
 							>
-								<Link href={navItem.link}>{navItem.label}</Link>
-							</motion.li>
+								<motion.li
+									onClick={(isOpen) => !isOpen}
+									variants={mobileLinkVars}
+									initial="initial"
+									animate="open"
+									exit={{
+										y: '30vh',
+										transition: {
+											delay: 0.5,
+											duration: 1,
+											ease: [0.22, 0, 0.39, 0],
+										},
+									}}
+									className="text-primary"
+								>
+									<Link href={navItem.link}>
+										{navItem.label}
+									</Link>
+								</motion.li>
+							</motion.div>
 						))}
 					</ul>
-				</motion.nav>
-			</AnimatePresence>
+				</AnimatePresence>
+			</motion.nav>
 			<AnimatePresence>
 				<motion.button
 					onClick={(isOpen) => !isOpen}
@@ -77,7 +110,7 @@ const NavBar = ({ isOpen }: { isOpen: boolean }) => {
 							delay: 0.25,
 						},
 					}}
-					exit="initial"
+					exit={{ opacity: 0, y: 50 }}
 					whileHover={{ scale: 1.05 }}
 					className=" rounded-lg bg-primary px-8 py-3 text-2xl font-semibold text-secondary"
 				>
