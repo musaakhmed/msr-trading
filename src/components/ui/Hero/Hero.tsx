@@ -15,7 +15,7 @@ export default function Hero() {
 							duration: 0.5,
 						},
 					}}
-					className="text-text px-6 text-center text-4xl font-extrabold  "
+					className="px-6 text-center text-4xl font-extrabold text-text  "
 				>
 					Elevate Healthcare Standards with Our Premium Equipment
 				</motion.h1>

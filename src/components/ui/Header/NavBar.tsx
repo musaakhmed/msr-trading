@@ -17,8 +17,8 @@ const navItems: nav_items[] = [
 		link: 'industries',
 	},
 	{
-		label: 'Partners',
-		link: 'partners',
+		label: 'Products',
+		link: 'products',
 	},
 	{
 		label: 'Contact',
