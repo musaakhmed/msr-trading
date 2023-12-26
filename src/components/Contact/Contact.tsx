@@ -34,7 +34,7 @@ const containerVars = {
 
 export const Contact = () => {
 	return (
-		<section className="flex flex-col">
+		<section className="flex w-full flex-col">
 			<div className="bg-secondary px-4 py-16 text-center">
 				<motion.h2
 					initial={{ y: -30, opacity: 0 }}
@@ -63,23 +63,25 @@ export const Contact = () => {
 				variants={containerVars}
 				initial="initial"
 				animate="animate"
-				className="w-full bg-primary px-5 pb-12 pt-6 text-[1rem]"
+				className="w-full gap-16 bg-primary px-5 pb-12 pt-6 text-[1rem] lg:flex lg:text-xl"
 			>
-				<motion.section
+				<motion.div
 					variants={formVars}
 					initial="initial"
 					animate="animate"
-					className="text-background"
+					className="text-background lg:w-1/3 lg:p-2"
 				>
-					<h1 className="text-3xl font-bold ">Contact Us</h1>
-					<div className="pt-2">
+					<h1 className="text-3xl font-bold lg:text-5xl ">
+						Contact Us
+					</h1>
+					<div className="pt-2 lg:pt-12">
 						<p>Have questions or inquiries? Reach out to us!</p>
 						<p className="my-2 ">
 							Your path to cutting-edge dental solutions begins
 							with a simple message.
 						</p>
 					</div>
-				</motion.section>
+				</motion.div>
 				<ContactForm />
 			</motion.div>
 		</section>
@@ -100,7 +102,7 @@ const ContactForm = () => {
 					delay: 0.5,
 				},
 			}}
-			className=" rounded-xl bg-background p-4 "
+			className=" rounded-xl bg-background p-4 lg:flex-grow lg:p-8 "
 		>
 			<div className="my-5 flex flex-col gap-0.5 first:mt-0 ">
 				<label className="text" htmlFor="firstname">
@@ -162,7 +164,7 @@ const ContactForm = () => {
 				></textarea>
 			</div>
 			<div className="flex ">
-				<button className=" w-full rounded-lg bg-primary p-2 text-secondary ">
+				<button className=" w-full rounded-lg bg-primary p-2 text-secondary lg:font-semibold">
 					Submit
 				</button>
 			</div>
