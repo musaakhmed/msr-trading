@@ -60,10 +60,10 @@ const containerVars = {
 
 const NavBar = ({ isOpen }: { isOpen: boolean }) => {
 	return (
-		<div className=" flex flex-col items-center justify-between gap-16">
+		<div className=" flex flex-col items-center justify-between gap-16 lg:flex-row lg:gap-4">
 			<motion.nav className="">
 				<AnimatePresence>
-					<ul className="-mt-16 flex w-full flex-col items-center justify-evenly gap-10 text-3xl">
+					<ul className="-mt-16 flex w-full flex-col items-center justify-evenly gap-10 text-3xl lg:mt-0 lg:flex-row lg:gap-4 lg:text-base">
 						{navItems.map((navItem) => (
 							<motion.div
 								variants={containerVars}
@@ -112,7 +112,7 @@ const NavBar = ({ isOpen }: { isOpen: boolean }) => {
 					}}
 					exit={{ opacity: 0, y: 50 }}
 					whileHover={{ scale: 1.05 }}
-					className=" rounded-lg bg-primary px-8 py-3 text-2xl font-semibold text-secondary"
+					className=" rounded-lg bg-primary px-8 py-3 text-2xl font-semibold text-secondary lg:px-4 lg:py-1  lg:text-base lg:font-normal"
 				>
 					Request a Quote
 				</motion.button>

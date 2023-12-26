@@ -66,6 +66,9 @@ export default function NavMenu() {
 							<NavBar isOpen={isOpen} />
 						</motion.div>
 					)}
+					<div className="hidden lg:block">
+						<NavBar isOpen={true} />
+					</div>
 				</AnimatePresence>
 			</div>
 		</header>
