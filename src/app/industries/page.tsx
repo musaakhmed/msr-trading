@@ -109,7 +109,7 @@ const paragraphVars = {
 
 const industries = () => {
 	return (
-		<div className="mt-24">
+		<div className="max-w-screen container mx-auto pb-12 pt-16 lg:px-4 lg:pt-24 ">
 			<section className=" flex h-96 w-full flex-col items-center justify-center gap-12 bg-secondary px-4 text-center">
 				<motion.h1
 					variants={titleVars}
@@ -145,6 +145,7 @@ const industries = () => {
 									delay: 0.25,
 								},
 							}}
+							viewport={{ once: true }}
 							key={index}
 							className="py-4 first:pt-0 last:pb-0 odd:bg-secondary odd:bg-opacity-50"
 						>

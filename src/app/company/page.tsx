@@ -29,13 +29,13 @@ const paragraphVars = {
 
 const company = () => {
 	return (
-		<article className="max-w-screen container mx-auto px-4 pb-12 pt-24 ">
-			<div className=" mb-12 flex h-96 w-full flex-col items-center justify-center gap-12 bg-secondary text-center">
+		<article className="max-w-screen container mx-auto pb-12 pt-16 lg:pt-24 ">
+			<div className=" mb-12 flex h-96 w-full flex-col items-center justify-center gap-12 bg-secondary px-8 text-center">
 				<motion.h1
 					variants={titleVars}
 					initial="initial"
 					animate="animate"
-					className="text-3xl font-extrabold"
+					className="text-2xl font-extrabold lg:text-3xl"
 				>
 					Our Vision, Your Success. Navigating the Path to Excellence
 					in Dentistry.
@@ -51,7 +51,7 @@ const company = () => {
 					at the forefront.
 				</motion.p>
 			</div>
-			<div>
+			<div className="px-4">
 				<h2 className="mb-4 text-2xl font-bold">About Us</h2>
 				<p className="mb-8 text-lg leading-relaxed text-gray-700">
 					At <span className="font-bold">Weld Med</span>, we are
@@ -64,9 +64,9 @@ const company = () => {
 				</p>
 			</div>
 
-			<div className="mb-8">
+			<div className="mb-8 px-4">
 				<h2 className="mb-4 text-2xl font-bold">Our Mission</h2>
-				<p className="text-gray-700">
+				<p className="mb-8 text-lg leading-relaxed text-gray-700">
 					Dedicated to enhancing the practice of dentistry, our
 					mission is to empower dental professionals with
 					state-of-the-art tools and comprehensive services. We aim to
@@ -76,7 +76,7 @@ const company = () => {
 				</p>
 			</div>
 
-			<div className="mb-8">
+			<div className="mb-8 px-4 text-lg leading-relaxed text-gray-700">
 				<h2 className="mb-4 text-2xl font-bold">
 					Why Choose <span className="font-bold">Weld Med</span>?
 				</h2>
@@ -101,7 +101,7 @@ const company = () => {
 				</ul>
 			</div>
 
-			<p className="mb-8 text-lg leading-relaxed text-gray-700">
+			<p className="mb-8 px-4 text-lg leading-relaxed text-gray-700">
 				Whether you are a seasoned practitioner or a new entrant to the
 				field, we invite you to partner with us on your journey to
 				excellence in dentistry. Explore our range of products and
