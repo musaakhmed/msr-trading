@@ -23,7 +23,7 @@ export default function RootLayout({
 		<html lang="en">
 			<meta name="viewport" content="width=device-width" />
 			<body
-				className={` mx-auto bg-background text-text ${nunito.className}`}
+				className={` mx-auto min-h-screen bg-background text-text ${nunito.className}`}
 			>
 				<NavMenu />
 				{children}

@@ -29,7 +29,7 @@ const paragraphVars = {
 
 const company = () => {
 	return (
-		<article className="max-w-screen container mx-auto min-h-screen px-4 pb-12 pt-24 ">
+		<article className="max-w-screen container mx-auto px-4 pb-12 pt-24 ">
 			<div className=" mb-12 flex h-96 w-full flex-col items-center justify-center gap-12 bg-secondary text-center">
 				<motion.h1
 					variants={titleVars}
