@@ -17,7 +17,7 @@ export default function Hero() {
 					}}
 					className="px-6 text-center text-4xl font-extrabold text-text  "
 				>
-					Elevate Healthcare Standards with Our Premium Equipment
+					With <span className='text-secondary'>MSR Trading</span>, the opportunities know no border!
 				</motion.h1>
 				<motion.div
 					className="mx-4 h-1/3 rounded-lg bg-cerulean-800 bg-hero-pattern bg-cover bg-center bg-blend-overlay"
@@ -45,9 +45,7 @@ export default function Hero() {
 						},
 					}}
 				>
-					With a focus on innovation and quality, we bring you
-					cutting-edge solutions trusted by healthcare professionals
-					worldwide.
+					We are your trusted partner for navigating the intricate world of international trade. 
 				</motion.p>
 
 				<motion.button
