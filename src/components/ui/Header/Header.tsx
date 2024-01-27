@@ -40,7 +40,7 @@ export default function NavMenu() {
 				className="text-xl font-bold text-primary"
 				onClick={() => setIsOpen(false)}
 			>
-				Weld Med
+				MSR Trading
 			</Link>
 			<div className="transition-all duration-200 ease-in">
 				<motion.div

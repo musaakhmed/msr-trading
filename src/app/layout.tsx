@@ -10,8 +10,8 @@ const nunito = Nunito_Sans({
 });
 
 export const metadata: Metadata = {
-	title: 'WeldMed',
-	description: 'Take the healthcare to the future',
+	title: 'MSR Trading',
+	description: 'Modern Silk Road Trading',
 };
 
 export default function RootLayout({

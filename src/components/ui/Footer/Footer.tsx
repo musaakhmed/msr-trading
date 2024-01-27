@@ -6,11 +6,10 @@ const Footer = () => {
 			<footer className="bg-primary shadow">
 				<div className="mx-auto w-full max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
 					<span className="text-sm text-secondary sm:text-center">
-						© 2023{' '}
+					&copy; {new Date().getFullYear() }{' '}
 						<a href="/" className="hover:underline">
-							Weld Med
-						</a>
-						. All Rights Reserved.
+							MSR Trading
+						</a>. All Rights Reserved.
 					</span>
 					<ul className="mt-3 flex flex-wrap items-center text-sm font-medium  text-secondary sm:mt-0">
 						<li>
