@@ -15,12 +15,13 @@ export default function Hero() {
 							duration: 0.5,
 						},
 					}}
-					className="px-6 text-center text-4xl font-extrabold text-text  "
+					className="text-text px-6 text-center text-4xl font-extrabold  "
 				>
-					With <span className='text-secondary'>MSR Trading</span>, the opportunities know no border!
+					With <span className="">MSR Trading</span>, the
+					opportunities know no border!
 				</motion.h1>
 				<motion.div
-					className="mx-4 h-1/3 rounded-lg bg-cerulean-800 bg-hero-pattern bg-cover bg-center bg-blend-overlay"
+					className="bg-cerulean-800 bg-hero-pattern mx-4 h-1/3 rounded-lg bg-cover bg-center bg-blend-overlay"
 					initial={{ opacity: 0 }}
 					animate={{
 						opacity: 1,
@@ -45,7 +46,8 @@ export default function Hero() {
 						},
 					}}
 				>
-					We are your trusted partner for navigating the intricate world of international trade. 
+					We are your trusted partner for navigating the intricate
+					world of international trade.
 				</motion.p>
 
 				<motion.button
@@ -62,7 +64,7 @@ export default function Hero() {
 					whileHover={{ scale: 1.01 }}
 					className="mx-auto w-1/2 rounded-lg bg-primary p-2 text-secondary "
 				>
-					Explore Our Products
+					Explore The Industries
 				</motion.button>
 			</motion.section>
 			{/* <div className='h-screen'></div> */}

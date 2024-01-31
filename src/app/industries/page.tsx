@@ -5,80 +5,76 @@ import { motion } from 'framer-motion';
 interface IndustriesData {
 	name: string;
 	description: string;
+	image?: string;
 }
 
 interface IndustriesDataArray extends Array<IndustriesData> {}
 
-const dentalEquipmentIndustries: IndustriesDataArray = [
+const areasIndustries: IndustriesDataArray = [
 	{
-		name: 'Diagnostic Equipment',
+		name: 'Manufacturing',
 		description:
-			'Includes intraoral and extraoral X-ray machines, Cone Beam Computed Tomography (CBCT) scanners, and digital imaging systems.',
+			'Mastering the global supply chain, we source raw materials and deliver precision-crafted finished goods with unparalleled expertise.',
 	},
 	{
-		name: 'Treatment Equipment',
+		name: 'Technology',
 		description:
-			'Comprises dental chairs and units, hand pieces and drills, ultrasonic scalers, and laser systems for dental procedures.',
+			'At the forefront of innovation, we are the nexus for sourcing tech components, microchips, and advancing electronic advancements globally.',
 	},
 	{
-		name: 'Sterilization and Infection Control',
+		name: 'Automotive',
 		description:
-			'Encompasses autoclaves and sterilizers, disinfectants and cleaning solutions, and personal protective equipment (PPE).',
+			'Driving partnerships across borders, we source quality automotive components and machinery, delivering vehicles and parts to fuel the mobility industry.',
 	},
 	{
-		name: 'CAD/CAM Systems',
+		name: 'Textiles and Apparel',
 		description:
-			'Involves Computer-Aided Design/Computer-Aided Manufacturing systems for dental restorations and intraoral scanners.',
+			'Fashioning global trends, we source premium materials and deliver style and quality that resonates worldwide.',
 	},
 	{
-		name: 'Dental Lasers',
+		name: 'Food and Agriculture',
 		description:
-			'Includes soft tissue lasers and hard tissue lasers used for procedures like cavity preparation.',
+			'Harvesting global flavors, we source diverse commodities and machinery, delivering culinary delights that nourish communities across the globe.',
 	},
 	{
-		name: 'Endodontic Equipment',
+		name: 'Healthcare and Pharmaceuticals',
 		description:
-			'Comprises apex locators, rotary and reciprocating endodontic instruments, and endodontic motors.',
+			'Caring for a healthier world, we source life-saving devices, pharmaceuticals, and cutting-edge medical technology, delivering hope on a global scale.',
 	},
 	{
-		name: 'Orthodontic Equipment',
+		name: 'Consumer Goods',
 		description:
-			'Involves orthodontic chairs and units, intraoral scanners for orthodontic treatment planning, and orthodontic instruments and appliances.',
+			'Enhancing lives globally, we source lifestyle essentials, electronics, and machinery, delivering the latest consumer products with a touch of innovation.',
 	},
 	{
-		name: 'Dental Laboratory Equipment',
+		name: 'Energy',
 		description:
-			'Encompasses dental lathes and milling machines, porcelain furnaces, and vacuum forming machines.',
+			'Powering progress worldwide, we source and deliver energy resources, machinery, and sustainable solutions to drive global advancements.',
 	},
 	{
-		name: 'Periodontal Equipment',
+		name: 'Construction and Building Materials',
 		description:
-			'Comprises ultrasonic scalers and air polishers, periodontal probes and diagnostic instruments, and surgical instruments for periodontal procedures.',
+			"Building tomorrow's landscapes, we source materials and construction machinery, delivering the foundations of progress with unwavering precision.",
 	},
 	{
-		name: 'Dental Furniture and Cabinetry',
+		name: 'Chemicals',
 		description:
-			'Involves dental office furniture, storage units, and cabinetry, including reception area furnishings.',
+			'In the alchemy of progress, we source a spectrum of chemicals and machinery, delivering innovations that shape industries around the world.',
 	},
 	{
-		name: 'Dental Compressors and Vacuum Systems',
+		name: 'Security and Defense',
 		description:
-			'Includes compressed air systems and vacuum pumps and systems.',
+			'Safeguarding security globally, we source and deliver cutting-edge defense equipment, technology, and machinery with a commitment to strength and resilience.',
 	},
 	{
-		name: 'Dental Chairs and Stools',
+		name: 'Metallurgy',
 		description:
-			'Encompasses ergonomic dental chairs and operator stools and seating solutions.',
+			'Forging the future, we source and deliver metals, alloys, and machinery, contributing to global industry strength with every endeavor.',
 	},
 	{
-		name: 'Infection Control and Sterilization Products',
+		name: 'Computers and Microchips',
 		description:
-			'Involves autoclave indicators, sterilization pouches and wraps.',
-	},
-	{
-		name: 'Digital Imaging and Photography Equipment',
-		description:
-			'Includes intraoral cameras and digital photography systems for dental documentation.',
+			'Powering the digital era, we source and deliver cutting-edge computers, microchips, and essential technology components, steering innovation in the global tech landscape with expertise and vision.',
 	},
 ];
 
@@ -107,7 +103,7 @@ const paragraphVars = {
 	},
 };
 
-const industries = () => {
+export const industries = () => {
 	return (
 		<div className="max-w-screen container mx-auto pb-12 pt-16 lg:px-4 lg:pt-24 ">
 			<section className=" flex h-96 w-full flex-col items-center justify-center gap-12 bg-secondary px-4 text-center">
@@ -132,155 +128,27 @@ const industries = () => {
 				</motion.p>
 			</section>
 			<section className="my-12 mb-24 flex flex-col gap-4 px-4">
-				{dentalEquipmentIndustries.map(
-					({ name, description }, index) => (
-						<motion.div
-							initial={{ x: -100, opacity: 0 }}
-							whileInView={{
-								x: 0,
-								opacity: 1,
-								transition: {
-									ease: [0.1, 0.03, 0.5, 0.9],
-									duration: 0.5,
-									delay: 0.25,
-								},
-							}}
-							viewport={{ once: true }}
-							key={index}
-							className="py-4 first:pt-0 last:pb-0 odd:bg-secondary odd:bg-opacity-50"
-						>
-							<h2 className="mb-2 text-lg font-semibold">
-								{name}
-							</h2>
-							<p>{description}</p>
-						</motion.div>
-					),
-				)}
+				{areasIndustries.map(({ name, description }, index) => (
+					<motion.div
+						initial={{ x: -100, opacity: 0 }}
+						whileInView={{
+							x: 0,
+							opacity: 1,
+							transition: {
+								ease: [0.1, 0.03, 0.5, 0.9],
+								duration: 0.5,
+								delay: 0.25,
+							},
+						}}
+						viewport={{ once: true }}
+						key={index}
+						className="rounded-lg border border-primary p-4 text-center first:pt-0 last:pb-0 "
+					>
+						<h2 className="mb-2 text-lg font-semibold">{name}</h2>
+						<p>{description}</p>
+					</motion.div>
+				))}
 			</section>
 		</div>
 	);
 };
-
-export default industries;
-
-{
-	/*
-
-const dentalEquipmentData = [
-  {
-    name: "Diagnostic Equipment",
-    items: [
-      "Intraoral and extraoral X-ray machines",
-      "Cone Beam Computed Tomography (CBCT) scanners",
-      "Digital imaging systems",
-    ],
-  },
-  {
-    name: "Treatment Equipment",
-    items: [
-      "Dental chairs and units",
-      "Handpieces and drills",
-      "Ultrasonic scalers",
-      "Laser systems for dental procedures",
-    ],
-  },
-  {
-    name: "Sterilization and Infection Control",
-    items: [
-      "Autoclaves and sterilizers",
-      "Disinfectants and cleaning solutions",
-      "Personal protective equipment (PPE)",
-    ],
-  },
-  {
-    name: "CAD/CAM Systems",
-    items: [
-      "Computer-Aided Design/Computer-Aided Manufacturing systems for dental restorations",
-      "Intraoral scanners",
-    ],
-  },
-  {
-    name: "Dental Lasers",
-    items: [
-      "Soft tissue lasers",
-      "Hard tissue lasers for procedures like cavity preparation",
-    ],
-  },
-  {
-    name: "Endodontic Equipment",
-    items: [
-      "Apex locators",
-      "Rotary and reciprocating endodontic instruments",
-      "Endodontic motors",
-    ],
-  },
-  {
-    name: "Orthodontic Equipment",
-    items: [
-      "Orthodontic chairs and units",
-      "Intraoral scanners for orthodontic treatment planning",
-      "Orthodontic instruments and appliances",
-    ],
-  },
-  {
-    name: "Dental Laboratory Equipment",
-    items: [
-      "Dental lathes and milling machines",
-      "Porcelain furnaces",
-      "Vacuum forming machines",
-    ],
-  },
-  {
-    name: "Periodontal Equipment",
-    items: [
-      "Ultrasonic scalers and air polishers",
-      "Periodontal probes and diagnostic instruments",
-      "Surgical instruments for periodontal procedures",
-    ],
-  },
-  {
-    name: "Dental Furniture and Cabinetry",
-    items: [
-      "Dental office furniture",
-      "Storage units and cabinetry",
-      "Reception area furnishings",
-    ],
-  },
-  {
-    name: "Dental Compressors and Vacuum Systems",
-    items: [
-      "Compressed air systems",
-      "Vacuum pumps and systems",
-    ],
-  },
-  {
-    name: "Dental Chairs and Stools",
-    items: [
-      "Ergonomic dental chairs",
-      "Operator stools and seating solutions",
-    ],
-  },
-  {
-    name: "Infection Control and Sterilization Products",
-    items: [
-      "Autoclave indicators",
-      "Sterilization pouches and wraps",
-    ],
-  },
-  {
-    name: "Digital Imaging and Photography Equipment",
-    items: [
-      "Intraoral cameras",
-      "Digital photography systems for dental documentation",
-    ],
-  },
-];
-
-// Convert to JSON
-const dentalEquipmentJSON = JSON.stringify(dentalEquipmentData, null, 2);
-
-console.log(dentalEquipmentJSON);
-
-
-*/
-}
