@@ -51,7 +51,7 @@ export default function Hero() {
 					world of international trade.
 				</motion.p>
 
-				<motion.Button
+				<motion.div
 					initial={{ opacity: 0, y: 25 }}
 					animate={{
 						opacity: 1,
@@ -63,10 +63,10 @@ export default function Hero() {
 						},
 					}}
 					whileHover={{ scale: 1.01 }}
-					className="mx-auto w-1/2 rounded-lg bg-primary p-2 text-secondary "
+					className="mx-auto"
 				>
-					Explore The Industries
-				</motion.Button>
+					<Button className="text-md">Explore The Industries</Button>
+				</motion.div>
 			</motion.section>
 			{/* <div className='h-screen'></div> */}
 		</>

@@ -1,6 +1,7 @@
 import { AnimatePresence, motion, stagger } from 'framer-motion';
 import Link from 'next/link';
 import React from 'react';
+import { Button } from '../button';
 
 interface nav_items {
 	label: string;
@@ -89,7 +90,9 @@ const NavBar = ({ isOpen }: { isOpen: boolean }) => {
 									className="text-primary"
 								>
 									<Link href={navItem.link}>
-										{navItem.label}
+										<Button variant="ghost">
+											{navItem.label}
+										</Button>
 									</Link>
 								</motion.li>
 							</motion.div>
@@ -98,7 +101,7 @@ const NavBar = ({ isOpen }: { isOpen: boolean }) => {
 				</AnimatePresence>
 			</motion.nav>
 			<AnimatePresence>
-				<motion.button
+				<motion.div
 					onClick={(isOpen) => !isOpen}
 					initial={{ opacity: 0, y: 50 }}
 					animate={{
@@ -111,11 +114,12 @@ const NavBar = ({ isOpen }: { isOpen: boolean }) => {
 						},
 					}}
 					exit={{ opacity: 0, y: 50 }}
-					whileHover={{ scale: 1.05 }}
-					className=" rounded-lg bg-primary px-8 py-3 text-2xl font-semibold text-secondary lg:px-4 lg:py-1  lg:text-base lg:font-normal"
+					// whileHover={{ scale: 1.05 }}
+					className=""
+					// className=" rounded-lg bg-primary px-8 py-3 text-2xl font-semibold text-secondary lg:px-4 lg:py-1  lg:text-base  lg:font-normal"
 				>
-					Request a Quote
-				</motion.button>
+					<Button className="">Request a Quote</Button>
+				</motion.div>
 			</AnimatePresence>
 		</div>
 	);
