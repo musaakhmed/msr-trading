@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import NavBar from './NavBar';
 import { HamBox } from './HamBox';
+import Image from 'next/image';
 
 const variants = {
 	initial: {
@@ -40,7 +41,12 @@ export default function NavMenu() {
 				className="text-xl font-bold text-primary"
 				onClick={() => setIsOpen(false)}
 			>
-				MSR Trading
+				<Image
+					src="/assets/images/logo/logo.png"
+					width={100}
+					height={100}
+					alt="logo"
+				/>
 			</Link>
 			<div className="transition-all duration-200 ease-in">
 				<motion.div
