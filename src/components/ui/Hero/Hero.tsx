@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button';
 
 export default function Hero() {
 	return (
@@ -50,7 +51,7 @@ export default function Hero() {
 					world of international trade.
 				</motion.p>
 
-				<motion.button
+				<motion.Button
 					initial={{ opacity: 0, y: 25 }}
 					animate={{
 						opacity: 1,
@@ -65,7 +66,7 @@ export default function Hero() {
 					className="mx-auto w-1/2 rounded-lg bg-primary p-2 text-secondary "
 				>
 					Explore The Industries
-				</motion.button>
+				</motion.Button>
 			</motion.section>
 			{/* <div className='h-screen'></div> */}
 		</>
