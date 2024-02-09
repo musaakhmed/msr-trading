@@ -64,7 +64,7 @@ const NavBar = ({ isOpen }: { isOpen: boolean }) => {
 		<div className=" flex flex-col items-center justify-between gap-16 lg:flex-row lg:gap-4">
 			<motion.nav className="">
 				<AnimatePresence>
-					<ul className="-mt-16 flex w-full flex-col items-center justify-evenly gap-10 text-3xl lg:mt-0 lg:flex-row lg:gap-4 lg:text-base">
+					<ul className="-mt-16 flex w-full flex-col items-center justify-evenly gap-10 text-3xl lg:mt-0 lg:flex-row lg:gap-4 ">
 						{navItems.map((navItem) => (
 							<motion.div
 								variants={containerVars}
@@ -90,7 +90,10 @@ const NavBar = ({ isOpen }: { isOpen: boolean }) => {
 									className="text-primary"
 								>
 									<Link href={navItem.link}>
-										<Button variant="ghost">
+										<Button
+											variant="ghost"
+											className="text-2xl lg:text-base"
+										>
 											{navItem.label}
 										</Button>
 									</Link>
@@ -118,7 +121,9 @@ const NavBar = ({ isOpen }: { isOpen: boolean }) => {
 					className=""
 					// className=" rounded-lg bg-primary px-8 py-3 text-2xl font-semibold text-secondary lg:px-4 lg:py-1  lg:text-base  lg:font-normal"
 				>
-					<Button className="">Request a Quote</Button>
+					<Button className="text-lg lg:text-base">
+						Request a Quote
+					</Button>
 				</motion.div>
 			</AnimatePresence>
 		</div>
