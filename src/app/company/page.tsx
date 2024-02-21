@@ -29,19 +29,18 @@ const paragraphVars = {
 
 const company = () => {
 	return (
-		<article className="max-w-screen container mx-auto pb-12 pt-16 lg:pt-24 ">
-			<div className=" mb-12 flex h-96 w-full flex-col items-center justify-center gap-12 bg-secondary px-8 text-center">
+		<article className="max-w-screen container mx-auto pb-12 pt-24 ">
+			<div className=" mb-12 flex h-96 w-full flex-col items-center justify-center gap-12 bg-accent px-8 text-center">
 				<motion.h1
 					variants={titleVars}
 					initial="initial"
 					animate="animate"
-					className="text-2xl font-extrabold lg:text-3xl"
+					className="text-2xl font-extrabold text-accent-foreground lg:text-3xl"
 				>
-					Our Vision, Your Success. Navigating the Path to Excellence
-					in Dentistry.
+					Our Vision, Your Success.
 				</motion.h1>
 				<motion.p
-					className="text-lg"
+					className="text-lg text-accent-foreground"
 					variants={paragraphVars}
 					initial="initial"
 					animate="animate"
@@ -51,64 +50,138 @@ const company = () => {
 					at the forefront.
 				</motion.p>
 			</div>
-			<div className="px-4">
-				<h2 className="mb-4 text-2xl font-bold">About Us</h2>
-				<p className="mb-8 text-lg leading-relaxed text-gray-700">
-					At <span className="font-bold">Weld Med</span>, we are
-					passionate about advancing oral healthcare by providing
-					cutting-edge medical equipment and top-notch services
-					tailored for dental professionals. With a commitment to
-					innovation, quality, and customer satisfaction, we strive to
-					be your trusted partner in delivering exceptional patient
-					care.
+			<div className="gap-8 px-4">
+				<h2 className="mb-4 text-2xl font-bold  ">
+					Our Philosophy: Modernising the Silk Road
+				</h2>
+				<p className="mb-8 text-lg leading-relaxed">
+					At <span className="font-bold">MSR Trading</span>, our
+					philosophy is deeply rooted in the transformative vision of
+					a <span className="font-bold">Modern Silk Road.</span>{' '}
+					Situated in Istanbul, the historic crossroads of
+					civilizations, we proudly embrace our role as pioneers in
+					revitalising this ancient trade route for the contemporary
+					world. Going beyond conventional trade practices, our
+					commitment extends to modernising the Silk Road as a dynamic
+					conduit for sustainable growth, where cultural exchange and
+					commercial transactions harmoniously intersect.
+				</p>{' '}
+			</div>
+			<div className="gap-8 px-4">
+				<h2 className="mb-4 text-2xl font-bold  ">
+					Our Power: Technical and Cultural Polyvalency
+				</h2>
+				<p className="mb-8 text-lg leading-relaxed">
+					Our diverse team serves as the embodiment of the Silk
+					Road&apos;s spirit, hailing from regions along its
+					historical path. With members fluent in Azerbaijani,
+					English, French, Russian, Turkish, and Ukrainian, our
+					collective roots and families stretch from Rotterdam,
+					Glasgow, London, and Brussels, passing through Istanbul,
+					Baku, and Astana, all the way to vibrant cities of Beijing,
+					Shanghai and Seoul. This cultural tapestry enables us to
+					navigate the Silk Road with unparalleled ease, connecting
+					not only through trade but through genuine understanding, as
+					we are an integral part of what the Silk Road represents—its
+					people. This extensive network empowers us to establish and
+					maintain longstanding partnerships with reliable friends
+					across the Silk Road, ensuring a seamless journey towards
+					shared success and prosperity.
 				</p>
 			</div>
 
 			<div className="mb-8 px-4">
 				<h2 className="mb-4 text-2xl font-bold">Our Mission</h2>
-				<p className="mb-8 text-lg leading-relaxed text-gray-700">
-					Dedicated to enhancing the practice of dentistry, our
-					mission is to empower dental professionals with
-					state-of-the-art tools and comprehensive services. We aim to
-					contribute to the success and growth of dental practices by
-					offering reliable and advanced solutions that prioritize
-					patient well-being.
+				<p className="mb-8 text-lg leading-relaxed ">
+					Our mission is to modernise and revitalise the Silk Road,
+					connecting businesses across diverse industries and regions
+					with reliable consultancy services and innovative solutions.
+					Through our multidisciplinary expertise and unwavering
+					commitment to local trust, we empower businesses to navigate
+					global markets with confidence, driving sustainable growth
+					and fostering enduring partnerships along the way.
 				</p>
 			</div>
 
-			<div className="mb-8 px-4 text-lg leading-relaxed text-gray-700">
+			<div className="mb-8 px-4 text-lg leading-relaxed ">
 				<h2 className="mb-4 text-2xl font-bold">
-					Why Choose <span className="font-bold">Weld Med</span>?
+					Why Choose <span className="font-bold">MSR Trading</span>?
 				</h2>
-				<ul className="list-inside list-disc text-gray-700">
+				<p className="mb-4">
+					Choosing MSR Trading as your strategic partner is choosing a
+					future of unparalleled growth and innovation on the
+					&apos;Modern Silk Road.&apos;
+				</p>
+				<p className="mb-4">Here is why:</p>
+				<ul className="list-inside list-disc ">
 					<li>
-						Quality Assurance: We understand the critical role that
-						quality plays in healthcare.
+						<span className="font-bold">
+							Multidisciplinary Expertise:
+						</span>{' '}
+						Benefit from a team with over a decade of expertise
+						spanning molecular biology, civil and physical
+						engineering, medical sciences, laboratory practices,
+						hospitality, and ICT.
 					</li>
 					<li>
-						Innovation at Its Core: Embracing the latest
-						technological advancements.
+						<span className="font-bold">Tailored Solutions:</span>{' '}
+						Our comprehensive consultancy services are customised to
+						address the specific challenges of your industry in
+						Western and Eastern Europe, the Middle East, Caucasus,
+						Central Asia, and East Asia.
 					</li>
 					<li>
-						Customer-Centric Approach: Your satisfaction is our
-						priority.
+						<span className="font-bold">
+							Reliability at the Core:
+						</span>{' '}
+						Our comprehensive consultancy services are customised to
+						address the specific challenges of your industry in
+						Western and Eastern Europe, the Middle East, Caucasus,
+						Central Asia, and East Asia.
 					</li>
 					<li>
-						Comprehensive Services: Beyond supplying top-quality
-						equipment, we offer a range of services to support your
-						practice.
+						<span className="font-bold">
+							Local Trust, Global Reach:
+						</span>{' '}
+						We build partnerships on a foundation of local trust,
+						fostering lasting connections that transcend borders and
+						cultures.
+					</li>
+					<li>
+						<span className="font-bold">Strategic Insights:</span>{' '}
+						Gain a competitive edge with our strategic insights,
+						navigating the complexities of international trade for
+						sustained success.
+					</li>
+					<li>
+						<span className="font-bold">Active Contribution:</span>{' '}
+						By choosing MSR Trading, you actively contribute to the
+						development of the &apos;modern silk road,&apos;
+						participating in a legacy of interconnected prosperity.
+					</li>
+					<li>
+						<span className="font-bold">
+							Innovation at Every Step:
+						</span>{' '}
+						Embrace a culture of innovation, where our
+						forward-thinking approach ensures your business stays
+						ahead in a rapidly evolving global landscape.
+					</li>
+					<li>
+						<span className="font-bold">Legacy of Success:</span>{' '}
+						Join a legacy of success as we architect sustainable
+						growth, not just facilitating trade but actively shaping
+						the future of businesses on this dynamic global journey.
 					</li>
 				</ul>
+				<p>
+					<span className="font-bold">MSR Trading</span> isn&apos;t
+					just a choice; it&apos;s an investment in a future where
+					your business doesn&apos;t just survive but excels.
+				</p>
 			</div>
 
-			<p className="mb-8 px-4 text-lg leading-relaxed text-gray-700">
-				Whether you are a seasoned practitioner or a new entrant to the
-				field, we invite you to partner with us on your journey to
-				excellence in dentistry. Explore our range of products and
-				services, and discover how{' '}
-				<span className="font-bold">Weld Med</span> can be the catalyst
-				for elevating your dental practice to new heights.
-			</p>
+			<p className="mb-8 px-4 text-lg leading-relaxed "></p>
 		</article>
 	);
 };
