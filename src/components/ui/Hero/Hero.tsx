@@ -4,8 +4,7 @@ import { Button } from '@/components/ui/button';
 
 export default function Hero() {
 	return (
-		<>
-			<motion.section className=" flex h-[calc(100vh-4rem)] flex-col justify-start space-y-6 py-36">
+			<motion.section className=" flex h-[calc(100vh-5em)] flex-col justify-start space-y-6 py-36">
 				<motion.h1
 					initial={{ opacity: 0, y: 25 }}
 					animate={{
@@ -18,11 +17,11 @@ export default function Hero() {
 					}}
 					className="text-text px-6 text-center text-4xl font-extrabold  "
 				>
-					With <span className="">MSR Trading</span>, the
-					opportunities know no border!
+					Welcome
+					to <span className='text-accent'>MSR Trading</span>, your gateway to global trade prosperity!
 				</motion.h1>
 				<motion.div
-					className="bg-cerulean-800 bg-hero-pattern mx-4 h-1/3 rounded-lg bg-cover bg-center bg-blend-overlay"
+					className="bg-opacity-75 bg-hero-pattern mx-4 h-full rounded-lg bg-cover bg-center flex flex-col justify-center"
 					initial={{ opacity: 0 }}
 					animate={{
 						opacity: 1,
@@ -32,10 +31,9 @@ export default function Hero() {
 							delay: 0.5,
 						},
 					}}
-				/>
-
+				>
 				<motion.p
-					className="p-6 text-center text-lg"
+					className="p-6 text-center text-lg rounded-lg text-primary-foreground font-bold "
 					initial={{ opacity: 0, y: 25 }}
 					animate={{
 						opacity: 1,
@@ -47,9 +45,13 @@ export default function Hero() {
 						},
 					}}
 				>
-					We are your trusted partner for navigating the intricate
+					<span className='bg-accent'>
+						We are your trusted partner for navigating the intricate
 					world of international trade.
+					</span>
 				</motion.p>
+				</motion.div>
+
 
 				<motion.div
 					initial={{ opacity: 0, y: 25 }}
@@ -68,7 +70,5 @@ export default function Hero() {
 					<Button className="text-md">Explore The Industries</Button>
 				</motion.div>
 			</motion.section>
-			{/* <div className='h-screen'></div> */}
-		</>
 	);
 }
