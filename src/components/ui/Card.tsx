@@ -37,7 +37,7 @@ const Card = ({
 			className="sticky top-0 mx-4 flex h-screen items-center justify-center pt-24"
 		>
 			<motion.section
-				className="relative flex h-4/5 w-full flex-col gap-2 rounded-xl bg-primary text-primary-foreground xl:w-4/5"
+				className="relative flex h-4/5 w-full flex-col gap-2 rounded-xl bg-primary text-primary-foreground  xl:w-4/5"
 				style={{ scale, top: `calc(-10% + ${i * 25}px)` }}
 			>
 				<div className="relative h-1/3 w-full overflow-hidden rounded-t-xl">
