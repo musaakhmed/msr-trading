@@ -1,11 +1,12 @@
-import Intro from '@/components/Intro/Intro';
+import Industries from '@/components/Industries/Industries';
 import Hero from '@/components/ui/Hero/Hero';
 
 export default function Home() {
 	return (
 		<main>
 			<Hero />
-			<Intro />
+			<Industries />
+			<section className="h-screen"></section>
 		</main>
 	);
 }
