@@ -27,7 +27,7 @@ export default function RootLayout({
 				// className={` mx-auto min-h-screen bg-background text-text ${nunito.className}`}
 				className={cn(
 					`
-					text-text mx-auto min-h-screen bg-background ${nunito.className} text-primary antialiased
+					text-text mx-auto min-h-screen bg-background ${nunito.className} scroll-smooth text-primary antialiased
 					`,
 				)}
 			>
