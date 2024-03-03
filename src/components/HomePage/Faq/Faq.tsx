@@ -11,7 +11,7 @@ import { faqs } from '@/data/faqs';
 const Faq = () => {
 	return (
 		<motion.div
-			className="mx-auto flex min-h-screen flex-col items-center justify-start p-8"
+			className="mx-auto my-16 flex h-full flex-col items-center justify-start p-8"
 			initial={{ y: 25, opacity: 0 }}
 			whileInView={{
 				y: 0,
