@@ -8,7 +8,7 @@ export default function Home() {
 	return (
 		<main>
 			<Hero />
-			<Brands />
+			{/*<Brands />*/}
 			<Industries />
 			<WhyChooseUs />
 			<Faq />
