@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { brands } from '@/data/brands';
 
-export const Brand = () => {
+export const ImageBox = () => {
 	return (
 		<div>
 			{brands.map(({ name, img, industry }, index) => (
