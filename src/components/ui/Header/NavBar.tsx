@@ -17,10 +17,10 @@ const navItems: nav_items[] = [
 		label: 'Industries',
 		link: 'industries',
 	},
-	{
-		label: 'Products',
-		link: 'products',
-	},
+	// {
+	// 	label: 'Partners',
+	// 	link: 'partners',
+	// },
 	{
 		label: 'Contact',
 		link: 'contact',
