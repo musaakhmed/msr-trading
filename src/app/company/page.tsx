@@ -29,8 +29,8 @@ const paragraphVars = {
 
 const company = () => {
 	return (
-		<article className="max-w-screen container mx-auto pb-12 pt-16 lg:pt-24 ">
-			<div className=" mb-12 flex h-96 w-full flex-col items-center justify-center gap-12 bg-accent px-8 text-center text-white">
+		<article className="max-w-screen  mx-auto pb-12 pt-16 lg:pt-24 ">
+			<div className=" container mb-12 flex h-96 w-full flex-col items-center justify-center gap-12 bg-accent px-8 text-center text-white">
 				<motion.h1
 					variants={titleVars}
 					initial="initial"
@@ -50,7 +50,7 @@ const company = () => {
 					at the forefront.
 				</motion.p>
 			</div>
-			<div className="gap-8 px-4">
+			<div className="container gap-8 px-4">
 				<h2 className="mb-4 text-2xl font-bold  ">
 					Our Philosophy: Modernising the Silk Road
 				</h2>
@@ -67,11 +67,11 @@ const company = () => {
 					commercial transactions harmoniously intersect.
 				</p>{' '}
 			</div>
-			<div className="gap-8 px-4">
+			<div className="container gap-8 px-4">
 				<h2 className="mb-4 text-2xl font-bold  ">
 					Our Power: Technical and Cultural Polyvalency
 				</h2>
-				<p className="mb-8 text-lg leading-relaxed">
+				<p className="mb-8 text-lg leading-relaxed ">
 					Our diverse team serves as the embodiment of the Silk
 					Road&apos;s spirit, hailing from regions along its
 					historical path. With members fluent in Azerbaijani,
@@ -90,7 +90,7 @@ const company = () => {
 				</p>
 			</div>
 
-			<div className="mb-8 px-4">
+			<div className="container mb-8 px-4">
 				<h2 className="mb-4 text-2xl font-bold">Our Mission</h2>
 				<p className="mb-8 text-lg leading-relaxed ">
 					Our mission is to modernise and revitalise the Silk Road,
@@ -103,7 +103,7 @@ const company = () => {
 				</p>
 			</div>
 
-			<div className="mb-8 px-4 text-lg leading-relaxed ">
+			<div className="container mb-8 px-4 text-lg leading-relaxed ">
 				<h2 className="mb-4 text-2xl font-bold">
 					Why Choose <span className="font-bold">MSR Trading</span>?
 				</h2>
@@ -174,14 +174,15 @@ const company = () => {
 						the future of businesses on this dynamic global journey.
 					</li>
 				</ul>
+			</div>
+
+			<div className="container mb-8 px-4 text-lg leading-relaxed ">
 				<p>
 					<span className="font-bold">MSR Trading</span> isn&apos;t
 					just a choice; it&apos;s an investment in a future where
 					your business doesn&apos;t just survive but excels.
 				</p>
 			</div>
-
-			<p className="mb-8 px-4 text-lg leading-relaxed "></p>
 		</article>
 	);
 };

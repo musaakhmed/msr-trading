@@ -86,8 +86,8 @@ const paragraphVars = {
 
 const industries = () => {
 	return (
-		<main className="max-w-screen container mx-auto pb-12 pt-16 lg:pt-24 ">
-			<section className=" mb-12 flex h-96 w-full flex-col items-center justify-center gap-12 bg-accent px-8 text-center text-white">
+		<main className="max-w-screen mx-auto pb-12 pt-16 lg:pt-24 ">
+			<section className=" container mb-12 flex h-96 w-full flex-col items-center justify-center gap-12 bg-accent px-8 text-center text-white">
 				<motion.h1
 					variants={titleVars}
 					initial="initial"
@@ -124,7 +124,7 @@ const industries = () => {
 					<p className="text-lg font-semibold lg:text-3xl ">
 						Ready to discuss your specific needs?
 					</p>
-					<Button className="lg:text-xl">Contact Us Today</Button>
+					<Button className="p-4 lg:text-lg">Contact Us Today</Button>
 				</div>
 			</section>
 		</main>
