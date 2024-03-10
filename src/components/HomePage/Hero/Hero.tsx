@@ -18,7 +18,8 @@ export default function Hero() {
 				className="text-text px-6 text-center text-4xl font-extrabold md:py-12 "
 			>
 				Welcome to <span className="text-accent">MSR Trading</span>,
-				your gateway to global trade prosperity!
+				your guide to the{' '}
+				<span className="text-accent">Modern Silk Road</span>!
 			</motion.h1>
 			<motion.div
 				className="mx-4 flex h-full flex-col justify-center rounded-lg bg-opacity-75 bg-hero-pattern bg-cover bg-center"
