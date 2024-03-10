@@ -36,46 +36,48 @@ export default function NavMenu() {
 
 	return (
 		<header className=" fixed top-0 z-10 flex h-16 w-full items-center justify-between bg-background px-6 shadow-md ">
-			<Link
-				href="/"
-				className="text-xl font-bold text-primary"
-				onClick={() => setIsOpen(false)}
-			>
-				<Image
-					src="/assets/images/logo/logo.png"
-					width={130}
-					height={125}
-					alt="logo"
-				/>
-			</Link>
-			<div className="transition-all duration-200 ease-in">
-				<motion.div
-					onClick={menuOpenHandler}
-					className=" cursor-pointer"
+			<div className="mx-auto flex w-full max-w-screen-2xl items-center justify-between">
+				<Link
+					href="/"
+					className="text-xl font-bold text-primary"
+					onClick={() => setIsOpen(false)}
 				>
-					<HamBox isOpen={isOpen} />
-				</motion.div>
-				<AnimatePresence>
-					{isOpen && (
-						<motion.div
-							onClick={menuOpenHandler}
-							initial="initial"
-							animate="animate"
-							exit="exit"
-							variants={variants}
-							className={
-								isOpen
-									? 'fixed left-0 top-16 z-20 mx-auto flex h-screen w-full origin-top flex-col justify-center gap-6 bg-background bg-opacity-70 shadow backdrop-blur-md '
-									: 'hidden'
-							}
-						>
-							<NavBar isOpen={isOpen} />
-						</motion.div>
-					)}
-					<div className="hidden lg:block">
-						<NavBar isOpen={true} />
-					</div>
-				</AnimatePresence>
+					<Image
+						src="/assets/images/logo/logo.png"
+						width={130}
+						height={125}
+						alt="logo"
+					/>
+				</Link>
+				<div className="transition-all duration-200 ease-in">
+					<motion.div
+						onClick={menuOpenHandler}
+						className=" cursor-pointer"
+					>
+						<HamBox isOpen={isOpen} />
+					</motion.div>
+					<AnimatePresence>
+						{isOpen && (
+							<motion.div
+								onClick={menuOpenHandler}
+								initial="initial"
+								animate="animate"
+								exit="exit"
+								variants={variants}
+								className={
+									isOpen
+										? 'fixed left-0 top-16 z-20 mx-auto flex h-screen w-full origin-top flex-col justify-center gap-6 bg-background bg-opacity-70 shadow backdrop-blur-md '
+										: 'hidden'
+								}
+							>
+								<NavBar isOpen={isOpen} />
+							</motion.div>
+						)}
+						<div className="hidden lg:block">
+							<NavBar isOpen={true} />
+						</div>
+					</AnimatePresence>
+				</div>
 			</div>
 		</header>
 	);
