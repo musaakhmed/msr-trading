@@ -1,7 +1,7 @@
 export const faqs = [
 	{
 		question: 'What is the mission of MSR Trading?',
-		answer: 'Our mission is to be your trusted partner on the Modern Silk Road, facilitating smooth equipment procurement across diverse industries and borders. We connect companies in Europe, Russia, and Azerbaijan, fostering collaboration and economic growth.',
+		answer: 'Our mission is to be your trusted partner on the Modern Silk Road, facilitating smooth equipment procurement across diverse industries and borders. We connect companies in Africa, Europe, and Asia, fostering collaboration and economic growth.',
 	},
 	{
 		question: 'What are your core values?',
@@ -9,11 +9,11 @@ export const faqs = [
 	},
 	{
 		question: 'Where are you located?',
-		answer: 'We have offices in Brussels, Belgium and Istanbul, Turkey. This strategic positioning allows us to serve clients across Europe, Asia, and Africa efficiently.',
+		answer: 'We are based in Istanbul, Turkey and Brussels, Belgium. This strategic positioning allows us to serve clients across Europe, Asia, and Africa efficiently.',
 	},
 	{
 		question: 'What languages do you speak?',
-		answer: 'Our multilingual team speaks English, Russian, Turkish, French, and more. This allows us to communicate effectively with clients from diverse backgrounds and navigate cultural nuances.',
+		answer: 'Our multilingual team speaks English, French, Turkish, Russian, and more. This allows us to communicate effectively with clients from diverse backgrounds and navigate cultural nuances.',
 	},
 	{
 		question: 'Do you offer additional services beyond equipment sales?',
