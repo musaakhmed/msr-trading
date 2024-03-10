@@ -15,7 +15,7 @@ export default function Hero() {
 						duration: 0.5,
 					},
 				}}
-				className="text-text px-6 text-center text-4xl font-extrabold  "
+				className="text-text px-6 text-center text-4xl font-extrabold md:py-12 "
 			>
 				Welcome to <span className="text-accent">MSR Trading</span>,
 				your gateway to global trade prosperity!
@@ -45,7 +45,7 @@ export default function Hero() {
 						},
 					}}
 				>
-					<span className="bg-accent text-xl">
+					<span className="bg-accent text-xl md:text-4xl md:leading-relaxed">
 						We are your trusted partner for navigating the intricate
 						world of international trade.
 					</span>
@@ -66,7 +66,7 @@ export default function Hero() {
 				whileHover={{ scale: 1.01 }}
 				className="mx-auto"
 			>
-				<Button className="text-lg font-bold">
+				<Button className="text-lg font-bold md:p-6 md:text-xl">
 					Explore The Industries
 				</Button>
 			</motion.div>

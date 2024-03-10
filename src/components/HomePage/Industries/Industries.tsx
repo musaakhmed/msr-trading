@@ -12,7 +12,7 @@ export default function Industries() {
 		offset: ['start start', 'end end'],
 	});
 	return (
-		<motion.section ref={container}>
+		<motion.section ref={container} className="mx-auto lg:max-w-[80%]">
 			{introTexts.map((card, i) => {
 				const targetScale = 1 - (introTexts.length - i) * 0.04;
 

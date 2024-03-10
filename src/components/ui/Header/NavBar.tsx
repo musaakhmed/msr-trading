@@ -61,10 +61,10 @@ const containerVars = {
 
 const NavBar = ({ isOpen }: { isOpen: boolean }) => {
 	return (
-		<div className=" flex flex-col items-center justify-between gap-16 lg:flex-row lg:gap-4">
+		<div className=" flex flex-col items-center justify-between gap-16 md:flex-row md:gap-4">
 			<motion.nav className="">
 				<AnimatePresence>
-					<ul className="-mt-16 flex w-full flex-col items-center justify-evenly gap-10 text-3xl lg:mt-0 lg:flex-row lg:gap-4 ">
+					<ul className="-mt-16 flex w-full flex-col items-center justify-evenly gap-10 text-3xl md:mt-0 md:flex-row md:gap-4 ">
 						{navItems.map((navItem) => (
 							<motion.div
 								variants={containerVars}

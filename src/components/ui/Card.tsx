@@ -37,28 +37,30 @@ const Card = ({
 			className="sticky top-0 mx-4 flex h-screen items-center justify-center pt-24"
 		>
 			<motion.section
-				className="relative flex h-4/5 w-full flex-col gap-2 rounded-xl bg-primary text-primary-foreground  xl:w-4/5"
+				className="relative flex h-4/5 w-full flex-col gap-2 rounded-xl bg-primary text-primary-foreground sm:w-4/5 lg:mx-auto lg:flex-row-reverse lg:items-center lg:justify-center "
 				style={{ scale, top: `calc(-10% + ${i * 25}px)` }}
 			>
-				<div className="relative h-1/3 w-full overflow-hidden rounded-t-xl">
+				<div className="lg: h-1/3 w-full overflow-hidden rounded-t-xl lg:h-1/2 lg:rounded-none ">
 					<motion.div
-						className={`h-full w-full`}
+						className="h-full w-full"
 						style={{ scale: imageScale }}
 					>
 						<Image
-							className="object-cover"
-							width={500}
-							height={500}
+							className="object-center"
+							width={800}
+							height={780}
 							src={img}
 							alt={title}
 						/>
 					</motion.div>
 				</div>
-				<div className="mx-4 space-y-3">
-					<div className=" text-2xl font-black">{title}</div>
-					<p className="text-lg">{desc}</p>
+				<div className="mx-4 flex flex-col justify-around gap-8 py-4 lg:w-3/4 lg:p-8">
+					<div className="text-2xl font-black lg:text-5xl">
+						{title}
+					</div>
+					<p className="text-lg lg:text-xl xl:text-2xl">{desc}</p>
 					<Button
-						className="mx-auto self-center text-lg"
+						className="mx-auto self-center text-lg lg:text-xl"
 						variant="secondary"
 					>
 						Learn more
