@@ -4,7 +4,7 @@ import { brands } from '@/data/brands';
 export const ImageBox = () => {
 	return (
 		<div>
-			{brands.map(({ name, img, industry }, index) => (
+			{brands.map(({ name, img }, index) => (
 				<Image
 					key={index}
 					height={500}
