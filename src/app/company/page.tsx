@@ -30,17 +30,17 @@ const paragraphVars = {
 const company = () => {
 	return (
 		<article className="max-w-screen container mx-auto pb-12 pt-24 ">
-			<div className=" mb-12 flex h-96 w-full flex-col items-center justify-center gap-12 bg-accent px-8 text-center">
+			<div className=" mb-12 flex h-96 w-full flex-col items-center justify-center gap-12 bg-accent px-8 text-center text-white">
 				<motion.h1
 					variants={titleVars}
 					initial="initial"
 					animate="animate"
-					className="text-2xl font-extrabold text-accent-foreground lg:text-3xl"
+					className="text-2xl font-extrabold lg:text-3xl"
 				>
 					Our Vision, Your Success.
 				</motion.h1>
 				<motion.p
-					className="text-lg text-accent-foreground"
+					className="text-lg lg:text-xl xl:text-2xl"
 					variants={paragraphVars}
 					initial="initial"
 					animate="animate"
