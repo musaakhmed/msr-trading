@@ -55,16 +55,16 @@ const Card = ({
 					</motion.div>
 				</div>
 				<div className="mx-4 flex flex-col justify-around gap-8 py-4 lg:p-8 xl:w-3/4">
-					<div className=" text-2xl font-black lg:text-4xl xl:text-5xl ">
+					<div className=" text-2xl font-black lg:text-3xl 2xl:text-5xl ">
 						{title}
 					</div>
-					<p className="text-lg lg:text-xl xl:text-2xl">{desc}</p>
-					<Button
-						className="mx-auto self-center text-lg lg:text-xl"
-						variant="secondary"
-					>
-						Learn more
-					</Button>
+					<p className="text-lg ">{desc}</p>
+					{/*<Button*/}
+					{/*	className="mx-auto self-center text-lg lg:text-xl"*/}
+					{/*	variant="secondary"*/}
+					{/*>*/}
+					{/*	Learn more*/}
+					{/*</Button>*/}
 				</div>
 			</motion.section>
 		</div>

@@ -2,7 +2,7 @@
 
 import { motion, useScroll } from 'framer-motion';
 import { introTexts } from '@/data/intro';
-import Card from '@/components/ui/Card';
+import Card from '@/components/HomePage/Industries/Card';
 import { useRef } from 'react';
 
 export default function Industries() {
