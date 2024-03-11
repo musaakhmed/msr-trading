@@ -4,6 +4,7 @@ import './globals.css';
 import NavMenu from '@/components/ui/Header/Header';
 import Footer from '@/components/ui/Footer/Footer';
 import { cn } from '../lib/utils';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const nunito = Nunito_Sans({
 	subsets: ['latin'],
@@ -35,6 +36,7 @@ export default function RootLayout({
 				{children}
 				<Footer />
 			</body>
+			<GoogleAnalytics gaId="G-QQ9R6TZTFP" />
 		</html>
 	);
 }
