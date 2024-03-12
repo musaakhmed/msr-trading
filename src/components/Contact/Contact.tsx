@@ -54,7 +54,7 @@ export const Contact = () => {
 						y: 0,
 						transition: { duration: 0.5, delay: 0.25 },
 					}}
-					className="pb-5 text-2xl font-bold text-text"
+					className="text-text pb-5 text-2xl font-bold"
 				>
 					Looking for a reliable partner?
 				</motion.h2>
@@ -67,67 +67,7 @@ export const Contact = () => {
 					different fields across Europe and Asia!
 				</motion.p>
 			</div>
-			<section className="bg-white">
-				<motion.div
-					variants={containerVars}
-					className=" mx-auto flex max-w-7xl flex-col items-baseline justify-center gap-4 rounded-xl bg-[#f9f9f9]  py-12 pl-12 leading-3 lg:m-12 lg:mx-auto lg:flex-row lg:items-center lg:justify-between lg:gap-12 lg:px-12 lg:py-6"
-				>
-					<motion.div
-						variants={paragraphVars}
-						initial="initial"
-						animate="animate"
-						className="flex items-center  justify-start gap-2"
-					>
-						<div className=" flex aspect-square h-12 items-center justify-center rounded-lg bg-white shadow-sm">
-							{icon}
-						</div>
-						<div className="">
-							<p className=" text-sm font-semibold">
-								Lifetime Updates
-							</p>
-							<p className="text-sm text-gray-400">
-								Lorem ipsum dolor sit amet.
-							</p>
-						</div>
-					</motion.div>
-					<motion.div
-						variants={paragraphVars}
-						initial="initial"
-						animate="animate"
-						className="flex items-center justify-start gap-2"
-					>
-						<div className=" flex aspect-square h-12 items-center justify-center rounded-lg bg-white shadow-sm">
-							{icon}
-						</div>
-						<div>
-							<p className="text-sm font-semibold">
-								Lifetime Updates
-							</p>
-							<p className="text-sm text-gray-400">
-								Lorem ipsum dolor sit.
-							</p>
-						</div>
-					</motion.div>
-					<motion.div
-						variants={paragraphVars}
-						initial="initial"
-						animate="animate"
-						className="flex items-center justify-start gap-2"
-					>
-						<div className=" flex aspect-square h-12 items-center justify-center rounded-lg bg-white shadow-sm">
-							{icon}
-						</div>
-						<div>
-							<p className="text-sm font-semibold">
-								Lifetime Updates
-							</p>
-							<p className="text-sm text-gray-400">
-								Lorem ipsum dolor sit amet consectetur.
-							</p>
-						</div>
-					</motion.div>
-				</motion.div>
-			</section>
+
 			<motion.div
 				variants={containerVars}
 				initial="initial"
