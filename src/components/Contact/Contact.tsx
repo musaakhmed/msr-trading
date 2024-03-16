@@ -57,17 +57,6 @@ const containerVars = {
 	},
 };
 
-const paragraphVars = {
-	initial: { y: 30, opacity: 0 },
-	animate: {
-		opacity: 1,
-		y: 0,
-		transition: { duration: 0.5, delay: 0.25 },
-	},
-};
-
-const icon = '&';
-
 export const Contact = () => {
 	return (
 		<section className="flex w-full flex-col">
@@ -101,7 +90,7 @@ export const Contact = () => {
 				variants={containerVars}
 				initial="initial"
 				animate="animate"
-				className="w-full bg-primary   text-[1rem]"
+				className="w-full bg-primary text-[1rem] lg:p-16"
 			>
 				<div className="mx-auto max-w-7xl gap-6 px-5 pb-12 pt-6 lg:flex lg:text-lg">
 					<motion.div
