@@ -2,6 +2,31 @@
 
 import { motion } from 'framer-motion';
 
+const titleVars = {
+	initial: { opacity: 0, y: 25 },
+	animate: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			ease: [0.1, 0.03, 0.5, 0.9],
+			duration: 0.5,
+			delay: 0.25,
+		},
+	},
+};
+const descriptionVars = {
+	initial: { opacity: 0, y: 25 },
+	animate: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			ease: [0.1, 0.03, 0.5, 0.9],
+			duration: 0.5,
+			delay: 0.5,
+		},
+	},
+};
+
 const formVars = {
 	initial: {
 		opacity: 0,
@@ -46,27 +71,31 @@ const icon = '&';
 export const Contact = () => {
 	return (
 		<section className="flex w-full flex-col">
-			<div className="bg-secondary px-4 py-16 text-center">
+			<section className="max-w-screen container mx-auto flex h-96 flex-col items-center justify-center space-y-5 bg-accent px-8 py-16 text-center text-white lg:my-8 lg:px-32">
 				<motion.h2
-					initial={{ y: -30, opacity: 0 }}
-					animate={{
-						opacity: 1,
-						y: 0,
-						transition: { duration: 0.5, delay: 0.25 },
-					}}
-					className="text-text pb-5 text-2xl font-bold"
+					variants={titleVars}
+					initial="initial"
+					animate="animate"
+					className="text-3xl font-extrabold"
 				>
 					Looking for a reliable partner?
 				</motion.h2>
-				<motion.p
-					variants={paragraphVars}
+				<motion.div
+					variants={descriptionVars}
 					initial="initial"
 					animate="animate"
+					className="text-lg lg:text-xl xl:text-2xl"
 				>
-					Contact us for more information about our operations in
-					different fields across Europe and Asia!
-				</motion.p>
-			</div>
+					<p>
+						Building partnerships and powering future starts with an
+						interaction. Let's connect!
+					</p>
+					<p>
+						Contact us for more information about our operations in
+						different fields across Africa, Asia and Europe!
+					</p>
+				</motion.div>
+			</section>
 
 			<motion.div
 				variants={containerVars}

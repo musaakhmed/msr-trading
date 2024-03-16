@@ -87,7 +87,7 @@ const paragraphVars = {
 const industries = () => {
 	return (
 		<main className="max-w-screen mx-auto pb-12 pt-16 lg:pt-24 ">
-			<section className=" container mb-12 flex h-96 w-full flex-col items-center justify-center gap-12 bg-accent px-8 text-center text-white">
+			<section className=" container mb-12 flex h-96 w-full flex-col items-center justify-center gap-12 bg-accent px-8 text-center text-white lg:px-32">
 				<motion.h1
 					variants={titleVars}
 					initial="initial"
