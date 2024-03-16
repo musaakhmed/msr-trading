@@ -115,9 +115,9 @@ const industries = () => {
 				{areasIndustries.map(({ name, description }, index) => (
 					<div
 						key={index}
-						className="flex flex-col items-center justify-start rounded-lg p-4 text-center shadow-md transition-all duration-200 ease-in-out hover:scale-105 hover:shadow-xl lg:w-[28%] lg:shadow"
+						className="flex flex-col items-center justify-around rounded-lg border-[0.5px] p-4 text-center shadow-md transition-all duration-200 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-primary lg:w-[28%] lg:shadow"
 					>
-						<h2 className="mb-2 text-lg font-semibold lg:text-xl lg:font-bold">
+						<h2 className="mb-2 text-lg font-semibold text-primary lg:text-xl lg:font-bold">
 							{name}
 						</h2>
 						<p>{description}</p>
