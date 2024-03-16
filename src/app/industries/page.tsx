@@ -87,7 +87,7 @@ const paragraphVars = {
 const industries = () => {
 	return (
 		<main className="max-w-screen mx-auto pb-12 pt-16 lg:pt-24 ">
-			<section className=" container mb-12 flex h-96 w-full flex-col items-center justify-center gap-12 bg-accent px-8 text-center text-white lg:px-32">
+			<section className=" container mx-auto mb-12 flex h-96 w-full flex-col items-center justify-center gap-12 bg-accent px-8 text-center text-white">
 				<motion.h1
 					variants={titleVars}
 					initial="initial"
@@ -108,13 +108,18 @@ const industries = () => {
 					oral healthcare.
 				</motion.p>
 			</section>
-			<section className="container my-12 mb-24 flex flex-col gap-4 px-4">
+			{/*
+			 TODO make into a separate component
+			  */}
+			<section className="mx-4 my-12 mb-24 flex flex-col justify-center gap-4 px-4 xl:container lg:flex-row lg:flex-wrap lg:gap-x-12 xl:gap-x-24">
 				{areasIndustries.map(({ name, description }, index) => (
 					<div
 						key={index}
-						className="rounded-lg border border-primary p-4 text-center first:pt-0 last:pb-0 "
+						className="flex flex-col items-center justify-start rounded-lg p-4 text-center shadow-md transition-all duration-200 ease-in-out hover:scale-105 hover:shadow-xl lg:w-[28%] lg:shadow"
 					>
-						<h2 className="mb-2 text-lg font-semibold">{name}</h2>
+						<h2 className="mb-2 text-lg font-semibold lg:text-xl lg:font-bold">
+							{name}
+						</h2>
 						<p>{description}</p>
 					</div>
 				))}
