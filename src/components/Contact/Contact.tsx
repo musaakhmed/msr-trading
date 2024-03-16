@@ -88,7 +88,7 @@ export const Contact = () => {
 				>
 					<p>
 						Building partnerships and powering future starts with an
-						interaction. Let's connect!
+						interaction. Let&apos;s connect!
 					</p>
 					<p>
 						Contact us for more information about our operations in
