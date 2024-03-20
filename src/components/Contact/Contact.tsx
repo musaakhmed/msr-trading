@@ -147,7 +147,7 @@ const ContactForm = () => {
 			<div className="my-5 items-center justify-between gap-4 lg:flex">
 				<div className=" flex w-full flex-col gap-1  ">
 					<label className="text" htmlFor="firstname">
-						First name
+						First name <span className="text-red-500">*</span>
 					</label>
 					<input
 						className="focus:border-1 h-10  rounded-lg border border-solid border-slate-300 p-2 focus:border-primary focus:shadow focus:outline-none"
@@ -157,7 +157,7 @@ const ContactForm = () => {
 				</div>
 				<div className=" flex w-full flex-col gap-1">
 					<label className="text" htmlFor="lastname">
-						Last name
+						Last name <span className="text-red-500">*</span>
 					</label>
 					<input
 						className="focus:border-1 h-10  rounded-lg border border-solid border-slate-300 p-2 focus:border-primary focus:shadow focus:outline-none"
@@ -168,7 +168,7 @@ const ContactForm = () => {
 			</div>
 			<div className="my-5 flex flex-col gap-1">
 				<label className="text" htmlFor="">
-					Email Address
+					Email Address <span className="text-red-500">*</span>
 				</label>
 				<input
 					className="focus:border-1 h-10  rounded-lg border border-solid border-slate-300 p-2 focus:border-primary focus:shadow focus:outline-none"
@@ -187,7 +187,7 @@ const ContactForm = () => {
 			</div>
 			<div className="my-5 flex flex-col gap-1">
 				<label className="text" htmlFor="subject">
-					Subject
+					Subject <span className="text-red-500">*</span>
 				</label>
 				<input
 					className="focus:border-1 h-10  rounded-lg border border-solid border-slate-300 p-2 focus:border-primary focus:shadow focus:outline-none"
@@ -197,7 +197,7 @@ const ContactForm = () => {
 			</div>
 			<div className="my-5 flex flex-col gap-1">
 				<label className="text" htmlFor="message">
-					Message
+					Message <span className="text-red-500">*</span>
 				</label>
 				<textarea
 					rows={6}
