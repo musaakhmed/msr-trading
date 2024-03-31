@@ -1,4 +1,4 @@
-export const brands = [
+export const medicalBrands = [
 	{
 		industry: 'medical',
 		name: 'Abbott',
@@ -42,12 +42,12 @@ export const brands = [
 	{
 		industry: 'medical',
 		name: 'GE Healthcare',
-		img: '/assets/images/brands/medical/ge_healthcare.png',
+		img: '/assets/images/brands/medical/ge-healthcare.png',
 	},
 	{
 		industry: 'medical',
 		name: 'Hartmann AG',
-		img: '/assets/images/brands/medical/hartmann_ag.png',
+		img: '/assets/images/brands/medical/hartmann-ag.png',
 	},
 	{
 		industry: 'medical',
@@ -61,8 +61,8 @@ export const brands = [
 	},
 	{
 		industry: 'medical',
-		name: 'Nikon Kohden',
-		img: '/assets/images/brands/medical/nikon_kohden.png',
+		name: 'Nihon Kohden',
+		img: '/assets/images/brands/medical/nihon_kohden.png',
 	},
 	{
 		industry: 'medical',
@@ -83,5 +83,43 @@ export const brands = [
 		industry: 'medical',
 		name: 'Zeiss',
 		img: '/assets/images/brands/medical/zeiss.png',
+	},
+];
+
+export const labBrands = [
+	{
+		industry: 'lab',
+		name: 'Abbott',
+		img: '/assets/images/brands/lab/abbott.png',
+	},
+	{
+		industry: 'lab',
+		name: 'Beckman Coulter',
+		img: '/assets/images/brands/lab/beckman_coulter.png',
+	},
+	{
+		industry: 'lab',
+		name: 'Biomerieux',
+		img: '/assets/images/brands/lab/biomerieux.png',
+	},
+	{
+		industry: 'lab',
+		name: 'Biorad',
+		img: '/assets/images/brands/lab/biorad.png',
+	},
+	{
+		industry: 'lab',
+		name: 'Roche',
+		img: '/assets/images/brands/lab/roche.png',
+	},
+	{
+		industry: 'lab',
+		name: 'Siemens Healthineers',
+		img: '/assets/images/brands/lab/siemens_healthineers.png',
+	},
+	{
+		industry: 'lab',
+		name: 'Thermo Fisher',
+		img: '/assets/images/brands/lab/thermo_fisher.png',
 	},
 ];

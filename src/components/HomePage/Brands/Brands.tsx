@@ -1,13 +1,46 @@
 import { ImageBox } from '@/components/ui/ImageBox';
-import { brands } from '@/data/brands';
+import { medicalBrands, labBrands } from '@/data/brands';
 
 export const Brands = () => {
 	return (
-		<section className="flex h-screen w-full items-center justify-center bg-accent">
-			<h2>Medical and Lab brands</h2>
-			{brands.map(({ name, img, industry }, index) => (
-				<ImageBox key={index}></ImageBox>
-			))}
+		<section className=" bg-accent/50 py-36">
+			<div className="container flex h-full w-full flex-col items-center justify-center space-y-20">
+				<h2 className="w-3/4 bg-accent py-2 text-center text-xl font-bold text-foreground md:text-2xl lg:text-4xl">
+					Our Brands
+				</h2>
+				<div className="space-y-8">
+					<h4 className="text-center text-lg font-bold md:text-xl lg:text-3xl">
+						Medical
+					</h4>
+					<div className="flex w-full flex-wrap items-center justify-center gap-8">
+						{medicalBrands.map(({ name, img, industry }, index) => (
+							<ImageBox
+								key={index}
+								src={img}
+								alt={name}
+								height={150}
+								width={150}
+							/>
+						))}
+					</div>
+				</div>
+				<div className="space-y-8">
+					<h4 className="text-center text-lg font-bold md:text-xl lg:text-3xl">
+						Lab
+					</h4>
+					<div className="flex w-full flex-wrap items-center justify-center gap-10">
+						{labBrands.map(({ name, img, industry }, index) => (
+							<ImageBox
+								key={index}
+								src={img}
+								alt={name}
+								height={150}
+								width={150}
+							/>
+						))}
+					</div>
+				</div>
+			</div>
 		</section>
 	);
 };
