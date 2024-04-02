@@ -3,7 +3,7 @@ import { medicalBrands, labBrands } from '@/data/brands';
 
 export const Brands = () => {
 	return (
-		<section className=" bg-accent/50 py-36">
+		<section className=" py-36">
 			<div className="container flex h-full w-full flex-col items-center justify-center space-y-10">
 				<h2 className="w-3/4 bg-accent py-2 text-center text-xl font-bold text-foreground md:text-2xl lg:text-4xl">
 					Our Top Brands
