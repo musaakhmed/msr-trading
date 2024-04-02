@@ -89,6 +89,11 @@ export const medicalBrands = [
 export const labBrands = [
 	{
 		industry: 'lab',
+		name: 'Biomerieux',
+		img: '/assets/images/brands/lab/biomerieux.png',
+	},
+	{
+		industry: 'lab',
 		name: 'Abbott',
 		img: '/assets/images/brands/lab/abbott.png',
 	},
@@ -96,11 +101,6 @@ export const labBrands = [
 		industry: 'lab',
 		name: 'Beckman Coulter',
 		img: '/assets/images/brands/lab/beckman_coulter.png',
-	},
-	{
-		industry: 'lab',
-		name: 'Biomerieux',
-		img: '/assets/images/brands/lab/biomerieux.png',
 	},
 	{
 		industry: 'lab',
