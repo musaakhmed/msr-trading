@@ -1,0 +1,140 @@
+[
+	{
+		"id": 1,
+		"industry": ["medical", "lab"],
+		"name": "Abbott",
+		"img": "/assets/images/brands/medical/abbott.png"
+	},
+	{
+		"id": 2,
+		"industry": ["medical"],
+		"name": "B Braun",
+		"img": "/assets/images/brands/medical/b_braun.png"
+	},
+	{
+		"id": 3,
+		"industry": ["medical"],
+		"name": "Bard",
+		"img": "/assets/images/brands/medical/bard.png"
+	},
+	{
+		"id": 4,
+		"industry": ["medical"],
+		"name": "BD",
+		"img": "/assets/images/brands/medical/bd.png"
+	},
+	{
+		"id": 5,
+		"industry": ["medical"],
+		"name": "Boston Scientific",
+		"img": "/assets/images/brands/medical/boston_scientific.png"
+	},
+	{
+		"id": 6,
+		"industry": ["medical"],
+		"name": "Convatec",
+		"img": "/assets/images/brands/medical/convatec.png"
+	},
+	{
+		"id": 7,
+		"industry": ["medical"],
+		"name": "Covidien",
+		"img": "/assets/images/brands/medical/covidien.png"
+	},
+	{
+		"id": 8,
+		"industry": ["medical"],
+		"name": "Ethicon",
+		"img": "/assets/images/brands/medical/ethicon.png"
+	},
+	{
+		"id": 9,
+		"industry": ["medical"],
+		"name": "GE Healthcare",
+		"img": "/assets/images/brands/medical/ge-healthcare.png"
+	},
+	{
+		"id": 10,
+		"industry": ["medical"],
+		"name": "Hartmann AG",
+		"img": "/assets/images/brands/medical/hartmann-ag.png"
+	},
+	{
+		"id": 11,
+		"industry": ["medical"],
+		"name": "Karl Storz",
+		"img": "/assets/images/brands/medical/karl_storz.png"
+	},
+	{
+		"id": 12,
+		"industry": ["medical"],
+		"name": "Medtronic",
+		"img": "/assets/images/brands/medical/medtronic.png"
+	},
+	{
+		"id": 13,
+		"industry": ["medical"],
+		"name": "Nihon Kohden",
+		"img": "/assets/images/brands/medical/nihon_kohden.png"
+	},
+	{
+		"id": 14,
+		"industry": ["medical"],
+		"name": "Philips",
+		"img": "/assets/images/brands/medical/philips.png"
+	},
+	{
+		"id": 15,
+		"industry": ["medical"],
+		"name": "Smith & Nephew",
+		"img": "/assets/images/brands/medical/smith_nephew.png"
+	},
+	{
+		"id": 16,
+		"industry": ["medical"],
+		"name": "Welch Allyn",
+		"img": "/assets/images/brands/medical/welch-allyn.png"
+	},
+	{
+		"id": 17,
+		"industry": ["medical"],
+		"name": "Zeiss",
+		"img": "/assets/images/brands/medical/zeiss.png"
+	},
+	{
+		"id": 18,
+		"industry": ["lab"],
+		"name": "Biomerieux",
+		"img": "/assets/images/brands/lab/biomerieux.png"
+	},
+	{
+		"id": 19,
+		"industry": ["lab"],
+		"name": "Beckman Coulter",
+		"img": "/assets/images/brands/lab/beckman_coulter.png"
+	},
+	{
+		"id": 20,
+		"industry": ["lab"],
+		"name": "Biorad",
+		"img": "/assets/images/brands/lab/biorad.png"
+	},
+	{
+		"id": 21,
+		"industry": ["lab"],
+		"name": "Roche",
+		"img": "/assets/images/brands/lab/roche.png"
+	},
+	{
+		"id": 22,
+		"industry": ["lab"],
+		"name": "Siemens Healthineers",
+		"img": "/assets/images/brands/lab/siemens_healthineers.png"
+	},
+	{
+		"id": 23,
+		"industry": ["lab"],
+		"name": "Thermo Fisher",
+		"img": "/assets/images/brands/lab/thermo_fisher.png"
+	}
+]
