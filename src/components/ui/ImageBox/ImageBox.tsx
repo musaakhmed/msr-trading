@@ -1,35 +1,27 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-export const ImageBox = ({
-	src,
-	alt,
-	height,
-	width,
-}: {
+type ImageBox = {
 	src: string;
 	alt: string;
 	height: number;
 	width: number;
-}) => {
+};
+
+export const ImageBox = ({ src, alt, height, width }: ImageBox) => {
 	return (
 		<motion.div
-			initial={{
-				opacity: 0,
-				y: 10,
-			}}
-			transition={{
-				duration: 0.5,
-				delay: 0.15,
-			}}
-			animate={{ opacity: 1, y: 0 }}
+			initial={{ y: 30, opacity: 0 }}
+			whileInView={{ y: 0, opacity: 1 }}
+			transition={{ duration: 0.3, delay: 0.15, ease: 'easeInOut' }}
+			viewport={{ once: true }}
 		>
 			<Image
 				src={src}
 				alt={alt}
 				height={height}
 				width={width}
-				className="h-auto w-auto cursor-pointer grayscale transition-all duration-300 ease-in-out hover:scale-125 hover:grayscale-0"
+				className="h-auto w-auto cursor-pointer transition-all duration-300 ease-in-out hover:scale-125 hover:grayscale-0 xl:grayscale"
 			/>
 		</motion.div>
 	);

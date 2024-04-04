@@ -1,7 +1,7 @@
 [
 	{
 		"id": 1,
-		"industry": ["medical", "lab"],
+		"industry": ["medical"],
 		"name": "Abbott",
 		"img": "/assets/images/brands/medical/abbott.png"
 	},
@@ -103,36 +103,42 @@
 	},
 	{
 		"id": 18,
+		"industry": [ "lab"],
+		"name": "Abbott",
+		"img": "/assets/images/brands/medical/abbott.png"
+	},
+	{
+		"id": 19,
 		"industry": ["lab"],
 		"name": "Biomerieux",
 		"img": "/assets/images/brands/lab/biomerieux.png"
 	},
 	{
-		"id": 19,
+		"id": 20,
 		"industry": ["lab"],
 		"name": "Beckman Coulter",
 		"img": "/assets/images/brands/lab/beckman_coulter.png"
 	},
 	{
-		"id": 20,
+		"id": 21,
 		"industry": ["lab"],
 		"name": "Biorad",
 		"img": "/assets/images/brands/lab/biorad.png"
 	},
 	{
-		"id": 21,
+		"id": 22,
 		"industry": ["lab"],
 		"name": "Roche",
 		"img": "/assets/images/brands/lab/roche.png"
 	},
 	{
-		"id": 22,
+		"id": 23,
 		"industry": ["lab"],
 		"name": "Siemens Healthineers",
 		"img": "/assets/images/brands/lab/siemens_healthineers.png"
 	},
 	{
-		"id": 23,
+		"id": 24,
 		"industry": ["lab"],
 		"name": "Thermo Fisher",
 		"img": "/assets/images/brands/lab/thermo_fisher.png"

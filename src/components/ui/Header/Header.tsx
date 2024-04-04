@@ -44,8 +44,9 @@ export default function NavMenu() {
 				>
 					<Image
 						src="/assets/images/logo/logo.png"
-						width={130}
-						height={125}
+						className="h-auto w-auto"
+						width={100}
+						height={100}
 						alt="logo"
 					/>
 				</Link>
