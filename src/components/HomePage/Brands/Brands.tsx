@@ -5,7 +5,6 @@ import Tabs from '@/components/ui/Tabs/Tabs';
 import data from '@/data/brands.json';
 import { motion } from 'framer-motion';
 import { ImageBox } from '@/components/ui/ImageBox/ImageBox';
-import { id } from 'postcss-selector-parser';
 
 interface Industry {
 	id: number;
@@ -31,11 +30,11 @@ const industry: Industry[] = [
 		title: 'Lab',
 		filter: (brand) => brand.industry.includes('lab'),
 	},
-	{
-		id: 4,
-		title: 'Beauty',
-		filter: (brand) => brand.industry.includes('beauty'),
-	},
+	// {
+	// 	id: 4,
+	// 	title: 'Beauty',
+	// 	filter: (brand) => brand.industry.includes('beauty'),
+	// },
 ];
 
 const Brands = () => {
