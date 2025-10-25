@@ -19,13 +19,13 @@ const Tabs = ({
 	};
 
 	return (
-		<div className="flex h-12 w-1/2 items-center justify-between rounded-xl bg-accent/20 px-1">
+		<div className="mx-auto flex h-12 w-1/2 items-center justify-between rounded-xl bg-accent/20 px-1">
 			{industry.map((i) => (
 				<button
 					key={i.id}
 					ref={tabId}
 					className={`w-full rounded-xl p-2 text-center font-bold outline-none transition-all duration-300 ease-in-out ${
-						selectedTab === i.id ? 'bg-accent text-white' : ''
+						selectedTab === i.id ? 'bg-primary text-white' : ''
 					}`}
 					onClick={() => handleSelectTab(i.id)}
 				>
