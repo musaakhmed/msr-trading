@@ -6,9 +6,10 @@ type ImageBox = {
 	alt: string;
 	height: number;
 	width: number;
+	className?: string;
 };
 
-export const ImageBox = ({ src, alt, height, width }: ImageBox) => {
+export const ImageBox = ({ src, alt, height, width, className }: ImageBox) => {
 	return (
 		<motion.div
 			initial={{ y: 30, opacity: 0 }}
@@ -21,7 +22,7 @@ export const ImageBox = ({ src, alt, height, width }: ImageBox) => {
 				alt={alt}
 				height={height}
 				width={width}
-				className="h-auto w-auto cursor-pointer transition-all duration-300 ease-in-out hover:scale-125 hover:grayscale-0 xl:grayscale"
+				className={className || "h-auto w-auto cursor-pointer transition-all duration-300 ease-in-out hover:scale-125 hover:grayscale-0 xl:grayscale"}
 			/>
 		</motion.div>
 	);
