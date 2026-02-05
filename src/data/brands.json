@@ -110,8 +110,8 @@
 	{
 		"id": 19,
 		"industry": ["lab"],
-		"name": "Biomerieux",
-		"img": "/assets/images/brands/lab/biomerieux.png"
+		"name": "Thermo Fisher",
+		"img": "/assets/images/brands/lab/thermo_fisher.png"
 	},
 	{
 		"id": 20,
@@ -136,11 +136,5 @@
 		"industry": ["lab"],
 		"name": "Siemens Healthineers",
 		"img": "/assets/images/brands/lab/siemens_healthineers.png"
-	},
-	{
-		"id": 24,
-		"industry": ["lab"],
-		"name": "Thermo Fisher",
-		"img": "/assets/images/brands/lab/thermo_fisher.png"
 	}
 ]
